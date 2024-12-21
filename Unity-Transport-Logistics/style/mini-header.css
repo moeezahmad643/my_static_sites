@@ -1,0 +1,106 @@
+.mini-header {
+  background-image: url("../images/background.jpg");
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.631);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .nav-buttons {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+    font-size: small;
+    transition: all 0.5s;
+
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      transition: all 0.5s;
+    }
+    a:hover {
+      scale: 1.1;
+      color: orange;
+    }
+  }
+
+  .nav-top {
+    display: flex;
+    padding: 10px 10vw;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    img {
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+    }
+
+    #info-side {
+      display: flex;
+      gap: 40px;
+      color: white;
+      span {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        border-right: 1px solid white;
+        padding: 0px 20px;
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .bi {
+      font-size: x-large !important;
+      color: orange !important;
+    }
+  }
+  .toggle-button {
+    border: none !important;
+    display: none;
+    .bi{
+        font-size: x-large !important;
+        background-color: orange !important;
+        color: white;
+        padding: 10px;
+        border: none !important;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  #info-side {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-buttons {
+    background-color: orange;
+    position: absolute;
+    top: -600px;
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px !important;
+    z-index: 1;
+    box-shadow: 0 0 2px gray;
+  }
+  .toggle-button {
+    display: block !important;
+    z-index: 2;
+
+  }
+}

@@ -1,0 +1,13 @@
+#about {
+  color: white;
+  padding: 5vw;
+
+  h1 {
+    font-size: 5vmax;
+  }
+  p {
+    font-size: medium;
+    margin: 2% 0px;
+    text-align: justify;
+  }
+}

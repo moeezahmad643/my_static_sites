@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  height: 100vh;
+  & img {
+    width: 49vw;
+    object-fit: cover;
+  }
+  & section {
+    width: 49vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 50px;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 30px;
+      
+      & span{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          gap: 5px;        
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:700px) {
+    footer{
+        flex-wrap: wrap;
+        & img{
+            width: 100vw;
+        }
+        & section{
+            width: 100vw;
+        }
+    }
+    
+}

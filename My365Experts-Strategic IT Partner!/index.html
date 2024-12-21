@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My365Experts</title>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/colaborated-companies.css">
+    <link rel="stylesheet" href="style/expertise.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/review.css">
+    <link rel="stylesheet" href="style/quality.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/cta.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <img style="width: 200px;border-radius: 0px;" src="logo.png" alt="Logo">
+        </div>
+
+        <ul id="main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+
+        <i id="navIcon" class="bi bi-list" style="color: white; font-size: 24px; cursor: pointer;"></i>
+
+        <ul id="sec" style="display: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+
+    <script>
+
+        window.addEventListener('resize', manageNavbar);
+        window.addEventListener('load', manageNavbar);
+
+        function manageNavbar() {
+            if (window.innerWidth < 600) {
+                // Display mobile view
+                document.getElementById('navIcon').style.display = 'block';
+                document.getElementById('main').style.display = 'none';
+                document.getElementById('sec').style.display = 'none'; // Hide the mobile menu initially
+
+                // Add toggle functionality
+                let toggle = false;
+                document.getElementById('navIcon').addEventListener('click', function () {
+                    toggle = !toggle;
+                    document.getElementById('sec').style.display = toggle ? 'block' : 'none';
+                });
+            } else {
+                // Display desktop view
+                document.getElementById('navIcon').style.display = 'none';
+                document.getElementById('main').style.display = 'flex';
+                document.getElementById('sec').style.display = 'none';
+            }
+        }
+
+    </script>
+
+
+    <header>
+        <div>
+            <h1>Welcome to My365Experts – Your Strategic IT Partner!</h1>
+            <p>Empowering businesses to navigate challenges and seize opportunities in a fast-evolving tech environment.
+                Let's drive innovation together.</p>
+        </div>
+        <img src="image.png" alt="Header Image">
+    </header>
+
+
+    <section class="expertise">
+        <div class="text-area">
+            <span class="top-badge">
+                <span class="top-badge-text">Our Expertise</span>
+                <span class="top-badge-line"></span>
+            </span>
+            <h1>Meet Our Expertise</h1>
+            <p>At My365Experts, we blend deep expertise in AI with strategic IT consultancy to address unique business
+                challenges. Together, we'll craft tailored solutions that align technology with your vision for success.
+            </p>
+            <p>With proven strategies and a personalized approach, we empower businesses to achieve operational
+                excellence and secure a competitive edge in their industry.</p>
+                <a href="about.html">
+                    <button class="btn-primary">About Us</button>
+                </a>
+        </div>
+        <div class="image-area">
+            <img src="image1.png" alt="Expertise Image">
+
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="image-area">
+            <img src="image (1).png" alt="Services Image">
+        </div>
+        <div class="text-area">
+            <span class="top-badge">
+                <span class="top-badge-text">Success</span>
+                <span class="top-badge-line"></span>
+            </span>
+
+            <h1>Our Strategic Plan for Your</h1>
+            <p>We begin by thoroughly understanding your business's unique challenges and goals, recognizing that each
+                organization has its own distinct needs. Based on this deep understanding, we then craft tailored
+                strategies and solutions that align perfectly with your specific business objectives. 
+            </p>
+                <p>
+                Our expert team
+                works closely with yours throughout the entire process, ensuring that the implementation of these
+                solutions is seamless and efficient. We focus on delivering results that lead to lasting success and
+                help your business thrive in the long term.</p>
+                <a href="services.html">
+                    <button class="btn-primary">Our Services</button>
+                </a>
+
+
+        </div>
+    </section>
+
+    <section class="expertise">
+        <div class="text-area">
+            <span class="top-badge">
+                <span class="top-badge-text">Our Trust</span>
+                <span class="top-badge-line"></span>
+            </span>
+            <h1>Meet Our Expertise</h1>
+            <p>Lead with confidence and innovation by ensuring your technology aligns perfectly with your business
+                strategy. We help transform challenges into stepping stones, guiding you toward success.</p>
+            <p> If you're ready to innovate, take the next step and contact us today for a personalized consultation.
+                Together, we can achieve technological excellence, transforming your business operations, boosting
+                efficiency, and securing a competitive edge in your industry. Let us help you unlock your full
+                potential.</p>
+                <a href="contact.html">
+                    <button class="btn-primary">Contact Us</button>
+                </a>
+
+        </div>
+        <div class="image-area">
+            <img src="image1.png" alt="Expertise Image">
+        </div>
+    </section>
+
+
+    <section class="review">
+        <span class="top-badge">
+            <span class="top-badge-text">Testimonials</span>
+            <span class="top-badge-line"></span>
+        </span>
+        <h1>What Our Clients Say</h1>
+        <p>Hear how My365Experts has transformed businesses with innovative solutions and exceptional support.</p>
+
+        <section class="cards">
+            <div>
+                <span class="top-section">
+                    <img src="images/pp2.png" alt="Grace Turner">
+                    <span>
+                        <h3>Grace Turner</h3>
+                        <p>Director</p>
+                    </span>
+                </span>
+                <p>The team's AI expertise unlocked opportunities we hadn't imagined. Our operations are now more
+                    efficient than ever.</p>
+                <span class="botton-section">
+                    <img src="images/qoutes.png" alt="Quote">
+                </span>
+            </div>
+            <div>
+                <span class="top-section">
+                    <img src="images/pp3.png" alt="Linda Carter">
+                    <span>
+                        <h3>Linda Carter</h3>
+                        <p>Analyst</p>
+                    </span>
+                </span>
+                <p>Customized solutions from My365Experts helped us adapt and thrive in a competitive market.</p>
+                <span class="botton-section">
+                    <img src="images/qoutes.png" alt="Quote">
+                </span>
+            </div>
+            <div>
+                <span class="top-section">
+                    <img src="images/pp1.png" alt="Alex Walker">
+                    <span>
+                        <h3>Alex Walker</h3>
+                        <p>Attorney</p>
+                    </span>
+                </span>
+                <p>IT consultancy services were game-changing for our operations. Highly recommended!</p>
+                <span class="botton-section">
+                    <img src="images/qoutes.png" alt="Quote">
+                </span>
+            </div>
+        </section>
+    </section>
+
+    <section class="cta">
+        <div>
+            <span class="top-badge">
+                <span class="top-badge-text">Start Now</span>
+                <span class="top-badge-line"></span>
+            </span>
+
+            <h1>Start for Free – No Credit Card Required</h1>
+            <a href="services.html" >
+                <button class="btn-primary">Our Service</button>
+            </a>
+
+            <p>Want to connect with our team? <a href="#">Book a call today</a></p>
+        </div>
+
+
+        <img src="Images.png" alt="CTA Image">
+    </section>
+
+    <footer>
+        <div id="top-section">
+            <h1>Ready To Partner With Us?</h1>
+            <p>We're ready to help you succeed. Let’s get started!</p>
+        </div>
+        <div id="bottom-section">
+            <div id="left-side">
+                <h3>365 Experts</h3>
+                <p>At 365 Experts, we specialize in providing cutting-edge technological solutions and consultancy services. Whether it's AI integration, IT strategy, or custom solutions, our team works relentlessly to ensure your business stays ahead of the competition. Our mission is to empower businesses with the tools they need to thrive in a rapidly changing digital world.</p>
+
+            </div>
+            <div id="right-side">
+                <ul>
+                    <h2>Links</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+    
+                <ul>
+                    <h2>Social Media</h2>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+
+</body>
+
+</html>

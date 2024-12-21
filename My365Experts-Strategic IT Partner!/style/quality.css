@@ -1,0 +1,35 @@
+.quality {
+  padding: 5vw;
+  h1 {
+    font-size: 3vw;
+    width: 60%;
+  }
+
+  .quality-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+    > div {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      i{
+        font-size: 30px;
+        padding: 15px;
+        width: min-content;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+
+      }
+      h3{
+        font-size: 2vmax;
+      }
+      a{
+        font-weight: 500;
+        text-decoration: none;
+        color: #1C71B3;
+      }
+    }
+  }
+}

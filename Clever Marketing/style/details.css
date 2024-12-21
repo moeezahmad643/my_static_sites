@@ -1,0 +1,36 @@
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+  padding: 6vw 2vw;
+  flex-wrap: wrap;
+
+  div {
+    width: 20%;
+    min-width: 150px;
+    h1 {
+      font-size: 2.5vmax;
+    }
+    p {
+      color: rgb(220, 220, 220);
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+  }
+  span {
+    height: 50px;
+    width: 1px;
+    background-color: #5A5A5A;
+    box-shadow: 0 0px 15px 1.5px white;
+
+  }
+}
+
+
+@media screen and (max-width:750px) {
+    .details span{
+        display: none;
+    }
+}

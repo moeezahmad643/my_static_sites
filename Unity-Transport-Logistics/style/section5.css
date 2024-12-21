@@ -1,0 +1,49 @@
+.section5 {
+  padding: 2vw 2vw;
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    p {
+      letter-spacing: 2px;
+      color: rgb(100, 100, 100);
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding: 10px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 3vw;
+      margin: 20px;
+      align-items: center;
+      border-radius: 10px;
+      transition: all 0.5s;
+      h1 {
+          transition: all 0.5s;
+        font-size: 15px;
+
+      }
+      p {
+        color: gray;
+        text-align: justify;
+        line-height: 25px;
+      }
+    }
+    div:hover{
+        box-shadow: 0 0 12px 1px rgb(197, 197, 197);
+        h1{
+            color: orange;
+            scale: 1.1;
+        }
+    }
+  }
+}

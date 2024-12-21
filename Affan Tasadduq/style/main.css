@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.mainBtn {
+  background-color: #209fff;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 8px 13px;
+  border: none;
+  font-size: 18px;
+}
+.secBtn {
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+}
+.mainHeading {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.cursiveHeading {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#cardIcon {
+  color: black;
+  font-weight: bold;
+}

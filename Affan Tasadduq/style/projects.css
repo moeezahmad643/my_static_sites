@@ -1,0 +1,57 @@
+#projects-Cover {
+  padding: 5vw;
+  > h1 {
+    font-size: 5vmax;
+  }
+  > h2 {
+    font-size: 3vmax;
+    padding: 2vw;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+
+  h1 {
+    font-style: normal;
+    font-size: 4vmax;
+    padding: 1.2vw;
+  }
+}
+
+#projects {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  iframe {
+    transition: all 0.5s;
+    border: 1px solid gray;
+    border-radius: 5px;
+    min-width: 150px;
+  }
+
+  iframe:hover {
+    transform: scale(1.06);
+  }
+}
+
+.long-video {
+  iframe {
+      width: calc(100% / 4);
+      min-width: 300px !important;
+      aspect-ratio: 16/9;
+    }
+}
+
+.short-video {
+    iframe {
+      width: calc(100% / 7);
+    aspect-ratio: 9/16;
+  }
+}

@@ -1,0 +1,23 @@
+.section6{
+    background-color: #F9F9F9;
+    color: rgb(55, 55, 55);
+
+    padding:2vw 5vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    div{
+        width: 200px;
+        margin: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: rgb(119, 119, 119);
+    }
+}   

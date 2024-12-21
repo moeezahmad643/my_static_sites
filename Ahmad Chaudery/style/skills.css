@@ -1,0 +1,51 @@
+#skills {
+    padding: 2vw;
+    h1 {
+        font-size: xx-large;
+    }
+
+    #skillsSection {
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        > div {
+
+            display: flex;
+            gap: 2vw;
+            justify-content: space-between;
+            
+            
+            p{
+                font-size: medium;
+                text-wrap: nowrap;
+            }
+            .outline {
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 30px;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                height: 15px;
+
+                >span{
+                        background-color: rgb(255, 162, 0);
+                        height: 20px;   
+
+                }
+                #a1{
+                         width: 80% !important;
+                }
+                #a2{
+                         width: 90% !important;
+                }
+                #a3{
+                         width: 85% !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>Ayesha Naveed</title>
+        <style>
+                @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+                * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                html,
+                body {
+                        width: 100%;
+                        overflow-x: hidden;
+                        scroll-behavior: smooth;
+                }
+
+                body {
+                        background-color: rgb(255, 225, 225);
+                }
+
+                nav {
+                        font-size: 10rem;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 2vw 10vw;
+                        gap: 10px;
+                        align-items: center;
+                        font-size: x-large;
+                        flex-wrap: wrap;
+
+
+                        ul {
+                                font-size: large;
+                                display: flex;
+                                align-items: center;
+                                list-style: none;
+                                gap: 30px;
+
+                                a {
+                                        color: black;
+                                        text-decoration: none;
+                                }
+                        }
+                }
+
+                @media screen and (max-width:600px) {
+
+                        nav {
+                                justify-content: space-around;
+
+                        }
+                }
+
+                header {
+                        display: flex;
+                        padding: 5vw 10vw;
+                        align-items: center;
+                        gap: 20px;
+
+                        .textBox {
+                                width: 60%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                gap: 10px;
+
+                                h1 {
+                                        font-size: 5vmax;
+                                }
+
+                                p {
+                                        font-size: medium;
+                                }
+
+                                & button {
+                                        background-color: brown;
+                                        padding: 15px 20px;
+                                        border-radius: 2px;
+                                        font-size: 1.8vmax;
+                                        color: white;
+                                        border: none;
+                                        transition: all 0.2s;
+                                }
+
+                                button:hover {
+                                        background-color: black;
+
+                                }
+                        }
+
+                        .imgBox {
+                                width: 40%;
+                                border-radius: 50%;
+                                background-color: brown;
+                                display: grid;
+                                place-items: center;
+                                padding-top: 50px;
+                                aspect-ratio: 1/1;
+                                overflow: hidden;
+
+                                img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        transition: all 0.2s;
+                                }
+
+                                img:hover {
+                                        transform: scale(1.1);
+                                }
+                        }
+                }
+
+                @media screen and (max-width:700px) {
+                        header {
+                                display: flex;
+                                flex-wrap: wrap-reverse;
+                        }
+
+                        .textBox {
+                                width: 100vw !important;
+                        }
+
+                        .imgBox {
+                                width: 100vw !important;
+                        }
+                }
+
+                #About {
+                        padding: 5vw;
+
+                        h1 {
+                                font-size: 5vmax;
+                        }
+
+                        p {
+                                font-size: large;
+                                text-align: justify;
+                                text-indent: 0.5vw;
+                        }
+                }
+
+                #services {
+                        padding: 5vw;
+
+                        h1 {
+                                font-size: 5vmax;
+                        }
+
+                        p {
+                                font-size: medium !important;
+                                text-align: justify;
+                                text-indent: 0.5vw;
+                        }
+
+                        #ServicesSection {
+                                display: flex;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                                gap: 2%;
+                                gap: 40px;
+                                padding: 10px;
+
+                                >div {
+                                        border: 2px solid gray;
+                                        gap: 40px;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        box-shadow: 0 0 12px 2px rgba(128, 128, 128, 0.212);
+                                        padding: 30px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        width: 26vmax;
+                                        min-width: 240px;
+
+                                        img {
+                                                height: 100px;
+                                                transition: all 0.2s;
+
+                                        }
+
+                                        h2 {
+                                                padding: 20px;
+                                        }
+
+                                }
+
+                                div:hover {
+                                        background-color: rgb(250, 238, 238);
+                                }
+
+                                div:hover img {
+                                        transform: scale(1.1);
+                                }
+                        }
+                }
+
+
+                @media screen and (max-width:600px) {
+                        #ServicesSection {
+                                div {
+                                        flex-direction: row !important;
+                                        width: 100% !important;
+                                }
+                        }
+                }
+
+                @media screen and (max-width:500px) {
+                        #ServicesSection {
+                                gap: 10px !important;
+
+                                div {
+                                        flex-direction: column !important;
+                                        width: 100% !important;
+                                        gap: 10px !important;
+                                }
+                        }
+                }
+
+                #Worked-with {
+                        background-color: brown;
+                        color: white;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding: 2vw;
+                        gap: 3vw;
+
+                        div {
+
+                                width: 30vmax;
+                                padding: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                h1 {
+                                        font-size: 3vmax;
+                                        text-wrap: nowrap;
+                                }
+
+                                p {
+                                        font-size: 3vmax;
+                                }
+                        }
+                }
+
+                #Skills {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 40px;
+                        align-items: start;
+
+                        padding: 5vw;
+
+                        h1 {
+                                font-size: 5vw;
+                        }
+
+                        div {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                font-size: 2vmax;
+
+                                .border {
+                                        border: 2px solid black;
+                                        width: 80%;
+                                        border-radius: 6px;
+                                        display: flex;
+                                        align-items: center;
+
+                                        >span {
+                                                height: 20px;
+                                                background-color: brown;
+                                        }
+                                }
+                        }
+                }
+
+
+
+
+                /* Testimonial CSS by uiversi-io  */
+                /* _____________________________________________________________________________ */
+
+                #testimonial {
+                        padding: 5vw;
+                        display: flex;
+                        gap: 2vw;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+
+                        .card {
+                                background-color: rgba(243, 244, 246, 1);
+                                padding: 2rem;
+                                max-width: 320px;
+                                border-radius: 10px;
+                                box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+                        }
+
+                        .header {
+                                display: flex;
+                                align-items: center;
+                                grid-gap: 1rem;
+                                gap: 1rem;
+                        }
+
+                        .header .image {
+                                height: 5rem;
+                                width: 5rem;
+                                border-radius: 9999px;
+                                object-fit: cover;
+                                background-color: royalblue;
+
+                                img {
+                                        width: 100%;
+                                        height: 100%;
+                                        aspect-ratio: 1/1;
+                                        object-fit: cover;
+                                        border-radius: 50%;
+                                }
+                        }
+
+                        .stars {
+                                display: flex;
+                                justify-content: center;
+                                grid-gap: 0.125rem;
+                                gap: 0.125rem;
+                                color: rgb(255, 217, 0);
+                        }
+
+                        .stars svg {
+                                height: 1rem;
+                                width: 1rem;
+                        }
+
+                        .name {
+                                margin-top: 0.25rem;
+                                font-size: 1.125rem;
+                                line-height: 1.75rem;
+                                font-weight: 600;
+                                --tw-text-opacity: 1;
+                                color: rgba(55, 65, 81, 1);
+                        }
+
+                        .message {
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                margin-top: 1rem;
+                                color: rgba(107, 114, 128, 1);
+                        }
+
+
+
+                }
+
+                /* _____________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+
+                footer {
+                        background-color: brown;
+                        padding: 5vw;
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        h1{
+                                padding: 50px 0;
+                        }
+
+                        div {
+
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                gap: 6vmax;
+                                font-size: xx-large;
+                        }
+
+                }
+        </style>
+</head>
+
+<body>
+        <nav>
+                <h1>Ayesha&nbsp;Naveed</h1>
+                <ul>
+
+                        <a href="#About">
+                                <li>About</li>
+                        </a>
+                        <a href="#footer">
+                                <li>Contact</li>
+                        </a>
+                        <a href="#Worked-with">
+                                <li>Experience</li>
+                        </a>
+                </ul>
+        </nav>
+
+        <header>
+                <div class="textBox">
+                        <h1>Ayesha Naveed</h1>
+                        <p>Professional Digital Marketer</p>
+                        <button>Contact Now</button>
+                </div>
+                <div class="imgBox">
+                        <img src="main.png" alt="Moeez Ahmad">
+                </div>
+        </header>
+
+        <div id="About">
+                <h1>About</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, cum totam animi laudantium
+                        inventore consequatur, minus maxime nostrum vitae incidunt culpa sit quae nam natus omnis
+                        dolorem quas minima veritatis!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum ut odio eum iure. In soluta fuga eveniet odio harum. Cum laudantium temporibus et
+                        praesentium magnam nulla consequatur, veritatis exercitationem doloribus. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Quisquam, quidem! Saepe quisquam veritatis perspiciatis quis,
+                        ea provident obcaecati cupiditate impedit? Praesentium repellat corporis facere, perferendis
+                        dolorem veniam ad quia commodi officia esse nisi saepe, maxime alias delectus vel! A, tempore?
+                </p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, cum totam animi laudantium
+                        inventore consequatur, minus maxime nostrum vitae incidunt culpa sit quae nam natus omnis
+                        dolorem quas minima veritatis!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum ut odio eum iure. In soluta fuga eveniet odio harum. Cum laudantium temporibus et
+                        praesentium magnam nulla consequatur, veritatis exercitationem doloribus. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Quisquam, quidem! Saepe quisquam veritatis perspiciatis quis,
+                        ea provident obcaecati cupiditate impedit? Praesentium repellat corporis facere, perferendis
+                        dolorem veniam ad quia commodi officia esse nisi saepe, maxime alias delectus vel! A, tempore?
+                </p>
+                <br>
+        </div>
+
+        <div id="services">
+                <h1>Services</h1>
+                <section id="ServicesSection">
+                        <div>
+                                <img src="facebookads.png" alt="Moeez Ahmad">
+                                <div class="text-box">
+
+                                        <h2>Facebook&nbsp;Ads</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero,
+                                                culpa quis
+                                                cum odio, harum placeat sint nesciunt accusamus fugiat qui quisquam.
+                                                Placeat,
+                                                doloribus laudantium quibusdam sed aspernatur tenetur. Veritatis!</p>
+                                </div>
+                        </div>
+                        <div>
+                                <img src="seo.png" alt="Moeez Ahmad">
+                                <div class="text-box">
+
+                                        <h2>Facebook&nbsp;Ads</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero,
+                                                culpa quis
+                                                cum odio, harum placeat sint nesciunt accusamus fugiat qui quisquam.
+                                                Placeat,
+                                                doloribus laudantium quibusdam sed aspernatur tenetur. Veritatis!</p>
+                                </div>
+                        </div>
+                        <div>
+                                <img src="instagram.png" alt="Moeez Ahmad">
+                                <div class="text-box">
+
+                                        <h2>Instagram&nbsp;Ads</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero,
+                                                culpa quis
+                                                cum odio, harum placeat sint nesciunt accusamus fugiat qui quisquam.
+                                                Placeat,
+                                                doloribus laudantium quibusdam sed aspernatur tenetur. Veritatis!</p>
+                                </div>
+                        </div>
+                        <div>
+                                <img src="LinkedIn.png" alt="Moeez Ahmad">
+                                <div class="text-box">
+
+                                        <h2>Linkedin&nbsp;Ads</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero,
+                                                culpa quis
+                                                cum odio, harum placeat sint nesciunt accusamus fugiat qui quisquam.
+                                                Placeat,
+                                                doloribus laudantium quibusdam sed aspernatur tenetur. Veritatis!</p>
+                                </div>
+                        </div>
+                        <div>
+                                <img src="TikTok.png" alt="Moeez Ahmad">
+                                <div class="text-box">
+
+                                        <h2>Tiktok&nbsp;Ads</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero,
+                                                culpa quis
+                                                cum odio, harum placeat sint nesciunt accusamus fugiat qui quisquam.
+                                                Placeat,
+                                                doloribus laudantium quibusdam sed aspernatur tenetur. Veritatis!</p>
+                                </div>
+                        </div>
+                        <div>
+                                <img src="socialm.png" alt="Moeez Ahmad">
+                                <div class="text-box">
+
+                                        <h2>SM.&nbsp;Management</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero,
+                                                culpa quis
+                                                cum odio, harum placeat sint nesciunt accusamus fugiat qui quisquam.
+                                                Placeat,
+                                                doloribus laudantium quibusdam sed aspernatur tenetur. Veritatis!</p>
+                                </div>
+                        </div>
+                </section>
+        </div>
+
+        <div id="Worked-with">
+                <div>
+                        <h1>Clients Done</h1>
+                        <p>40+</p>
+                </div>
+                <div>
+                        <h1>Year Experience</h1>
+                        <p>3+</p>
+                </div>
+                <div>
+                        <h1>Projects Completed</h1>
+                        <p>50+</p>
+                </div>
+                <div>
+                        <h1>Technologies Used</h1>
+                        <p>10+</p>
+                </div>
+                <div>
+                        <h1>Countries Reached</h1>
+                        <p>5+</p>
+                </div>
+        </div>
+
+        <div id="testimonial">
+                <div class="card">
+                        <div class="header">
+                                <div class="image">
+                                        <img src="client1.jpg" alt="">
+                                </div>
+                                <div>
+                                        <div class="stars">
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                        </div>
+                                        <p class="name">John Doe</p>
+                                </div>
+                        </div>
+
+                        <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatem alias ut provident sapiente repellendus.
+                        </p>
+                </div>
+                <div class="card">
+                        <div class="header">
+                                <div class="image">
+                                        <img src="client2.jpg" alt="">
+                                </div>
+                                <div>
+                                        <div class="stars">
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                        </div>
+                                        <p class="name">John Doe</p>
+                                </div>
+                        </div>
+
+                        <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatem alias ut provident sapiente repellendus.
+                        </p>
+                </div>
+                <div class="card">
+                        <div class="header">
+                                <div class="image">
+                                        <img src="client3.jpg" alt="">
+                                </div>
+                                <div>
+                                        <div class="stars">
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                        </div>
+                                        <p class="name">John Doe</p>
+                                </div>
+                        </div>
+
+                        <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatem alias ut provident sapiente repellendus.
+                        </p>
+                </div>
+                <div class="card">
+                        <div class="header">
+                                <div class="image">
+                                        <img src="client4.jpg" alt="">
+                                </div>
+                                <div>
+                                        <div class="stars">
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                        </div>
+                                        <p class="name">John Doe</p>
+                                </div>
+                        </div>
+
+                        <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatem alias ut provident sapiente repellendus.
+                        </p>
+                </div>
+                <div class="card">
+                        <div class="header">
+                                <div class="image">
+                                        <img src="client5.jpg" alt="">
+                                </div>
+                                <div>
+                                        <div class="stars">
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                        </div>
+                                        <p class="name">John Doe</p>
+                                </div>
+                        </div>
+
+                        <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatem alias ut provident sapiente repellendus.
+                        </p>
+                </div>
+                <div class="card">
+                        <div class="header">
+                                <div class="image">
+                                        <img src="client6.jpg" alt="">
+                                </div>
+                                <div>
+                                        <div class="stars">
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                                        </path>
+                                                </svg>
+                                        </div>
+                                        <p class="name">John Doe</p>
+                                </div>
+                        </div>
+
+                        <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatem alias ut provident sapiente repellendus.
+                        </p>
+                </div>
+        </div>
+
+        <div id="Skills">
+                <h1>Skills</h1>
+                <div>
+                        <span>Facebook Ads</span>
+                        <span class="border">
+                                <span style="width: 90%;"></span>
+                        </span>
+                </div>
+                <div>
+                        <span>Instagram Ads</span>
+                        <span class="border">
+                                <span style="width: 85%;"></span>
+                        </span>
+                </div>
+                <div>
+                        <span>Tiktok Ads</span>
+                        <span class="border">
+                                <span style="width: 88%;"></span>
+                        </span>
+                </div>
+                <div>
+                        <span>Linkedin Ads</span>
+                        <span class="border">
+                                <span style="width: 80%;"></span>
+                        </span>
+                </div>
+                <div>
+                        <span>SEO Ads</span>
+                        <span class="border">
+                                <span style="width: 85%;"></span>
+                        </span>
+                </div>
+                <div>
+                        <span>Instagram Ads</span>
+                        <span class="border">
+                                <span style="width: 85%;"></span>
+                        </span>
+                </div>
+        </div>
+
+        <footer id="footer">
+
+                <h1>Cnnect with Me on</h1>
+                <div>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-whatsapp"></i>
+                </div>
+        </footer>
+</body>
+
+</html>

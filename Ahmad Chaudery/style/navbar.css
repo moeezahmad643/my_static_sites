@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 5vw;
+  flex-wrap: wrap;
+  gap: 10px;
+  h1 {
+    font-size: xx-large;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 70px;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width:700px) {
+    nav{
+      justify-content: space-around;
+    }
+}

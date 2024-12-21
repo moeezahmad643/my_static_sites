@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/articalFile.css">
+    <title>Articals</title>
+</head>
+
+<body>
+    <!-- <nav>
+        <h1>
+            <span style="color: #019bf5;">More</span>
+            <span>Ads</span>
+        </h1>
+        <ul>
+            <input type="search" name="" id="searchquery" placeholder="Search">
+        </ul>
+    </nav> -->
+
+    <main id="main">
+        <section id="artical">
+            <div class="top-box">
+                <h1 class="heading">Our Articals</h1>
+                <a href="articals.html">All Article</a>
+            </div>
+            <div id="articals" class="d-flex gap-5 flex-wrap justify-content-center">
+            </div>
+        </section>
+    </main>
+
+    <main id="other">
+    </main>
+
+    <script>
+        var url = new URL(window.location.href);
+        var id = url.searchParams.get("id");
+        if (id) {
+            document.getElementById('main').style.display = 'none'
+            console.log(id);
+
+            fetch(`http://localhost:3000/getArtical/id${id}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.data[0]);
+                    document.getElementById('other').innerHTML =
+                        `
+                        <div class='background-box' style='background:url(${data.data[0].image})'>
+                        </div>
+                        <div class='text-box'>
+                            <img src='${data.data[0].image}' >
+                            <h1 class='heading'>${data.data[0].mytitle}</h1>
+                            <p>${data.data[0].mydescription}</p> 
+                        </div>
+                        `
+                })
+        } else {
+            document.getElementById('other').style.display = 'none'
+
+            fetch(`http://localhost:3000/getArtical?limit=30`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message == "data-empty") {
+                        document.getElementById('artical').style.display = 'none'
+                    } else {
+                        data.data.map(artical => {
+                            console.log(artical);
+
+                            let articalBox = document.createElement('div')
+                            articalBox.setAttribute('class', 'card')
+                            articalBox.setAttribute('style', 'min-width:25vw; max-width:300px; border-radius:10px; overflow:hidden')
+                            articalBox.innerHTML = `
+                                <img src="${artical.image}" style='height:250px; object-fit:cover;'  class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${artical.mytitle}</h5>
+                                    <small class="card-text">${trim(artical.minidescription, 100)}</small><br>
+                                    <a href="articals.html?id=${artical.id}" class="btn btn-primary">Read&nbsp;Artical</a>
+                                </div>
+                            `
+                            document.getElementById('articals').append(articalBox)
+                        })
+                    }
+                })
+
+            function trim(text, givenLength) {
+                let outputText = ''
+
+                for (let i = 0; i <= givenLength; i++) {
+                    if (text[i]) outputText += text[i]
+                }
+
+                return outputText + '...'
+            }
+        }
+
+        console.log('hello');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

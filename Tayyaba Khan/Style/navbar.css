@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding:5vh 8vw;
+    align-items: center;
+    flex-wrap: wrap;
+    #navbar-image{
+        border-radius: 50%;
+    }
+    & ul {
+        display: flex;
+        gap: 5vw;
+        
+        & a {
+                text-decoration: none;
+                font-weight: bold;
+        }
+    }
+    .bi{
+        border-radius: 5px;
+        font-size: x-large;
+    }
+    #sec{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        transition: all 0.5s;
+    }
+}

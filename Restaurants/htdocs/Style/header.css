@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 5vw;
+
+  div {
+    width: 49vw;
+    h1 {
+        font-size: 5vmax;
+    }
+    p {
+        font-size: 1.5vmax;
+    }
+}
+img {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-wrap: wrap-reverse;
+  }
+}

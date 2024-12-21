@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tayyaba Khan</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+                rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+                rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="Style/main.css">
+        <link rel="stylesheet" href="Style/body.css">
+        <link rel="stylesheet" href="Style/navbar.css">
+        <link rel="stylesheet" href="Style/header.css">
+        <link rel="stylesheet" href="Style/about.css">
+        <link rel="stylesheet" href="Style/projects.css">
+        <link rel="stylesheet" href="Style/services.css">
+        <link rel="stylesheet" href="Style/footer.css">
+        <link rel="stylesheet" href="Style/testimonial.css">
+
+</head>
+
+<body>
+        <nav id="home">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                        <img style="width: 30px;" id="navbar-image" src="images/favicon.jpg" alt="">
+                        <h1>Tayyaba&nbsp;Khan</h1>
+                </div>
+
+                <ul id="main">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                </ul>
+                <ul>
+
+                        <i id="navIcon" class="bi bi-list"></i>
+                        <ul id="sec">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                        </ul>
+                </ul>
+
+        </nav>
+        <script>
+                console.log(window.innerWidth);
+
+                window.addEventListener('resize', manageNavbar);
+                window.addEventListener('load', manageNavbar);
+
+                function manageNavbar() {
+                        if (window.innerWidth < 600) {
+                                // Display mobile view
+                                document.getElementById('navIcon').style.display = 'block';
+                                document.getElementById('main').style.display = 'none';
+                                document.getElementById('sec').style.display = 'none'; // Hide the mobile menu initially
+
+                                // Add toggle functionality
+                                let toggle = false;
+                                document.getElementById('navIcon').addEventListener('click', function () {
+                                        toggle = !toggle;
+                                        document.getElementById('sec').style.display = toggle ? 'block' : 'none';
+                                });
+                        } else {
+                                // Display desktop view
+                                document.getElementById('navIcon').style.display = 'none';
+                                document.getElementById('main').style.display = 'flex';
+                                document.getElementById('sec').style.display = 'none';
+                        }
+                }
+
+        </script>
+
+        <header id="header">
+
+                <div id="textBox">
+                        <div id="textArea">
+                                <h1>I'm</h1>
+                                <h1 class="mainHeading" style="text-transform: uppercase;">
+                                        Tayyaba&nbsp;Khan</h1>
+
+                                <h1 style="font-size: 25px;line-height: 40px; " class="cursiveHeading">
+                                        Boosting Brands with Creative Graphics and Design Solutions
+                                        <br>
+                                        Expert in Designing logos | Flyers | Posters | Social Media Graphics
+                                </h1>
+                        </div>
+                        <div id="buttonArea">
+                                <a href="#projects"> <button class="mainBtn">Projects</button></a>
+                                <a href="#contact"> <button class="secBtn">Contact <i
+                                                        class="bi bi-chevron-right"></i></button></a>
+                        </div>
+                        <div id="IconBox">
+                                <a href="https://www.instagram.com/khan_grafix/"> <i class="bi bi-instagram"></i></a>
+                                <a href="https://www.fiverr.com/tayyabakhan266"> <img src="images/fiverr.jpg"
+                                                alt=""></a>
+                                <a href="https://www.linkedin.com/in/tayyaba-khan%F0%9F%90%BC-071b842b3/"> <i
+                                                class="bi bi-linkedin"></i></a>
+                                <a href="https://wa.me/923284532395"> <i class="bi bi-whatsapp"></i></a>
+                                <a href="https://www.behance.net/tayyabakhan16"><i class="bi bi-behance"></i></a>
+                                <a href="mailto:tayyabakhan2666@gmail.com"><i class="bi bi-envelope"></i></a>
+                        </div>
+                </div>
+                <div id="imageBox">
+                        <img src="images/favicon.jpg" alt="">
+                </div>
+        </header>
+
+        <section id="about">
+
+                <section id="aboutSection">
+                        <h1 class="mainHeading">About&nbsp;Me</h1>
+                        <p>
+
+                                I'm a graphic design expert who creates engaging social media graphics, helps with
+                                personal
+                                branding, and more. I work with individuals and businesses to make their online presence
+                                look
+                                great with clean and attractive designs.
+                        </p>
+                        <p>
+
+                                From building a unique brand identity and designing memorable logos to making engaging
+                                social
+                                media graphics and custom wall designs, I offer solutions that fit your style and
+                                attract your
+                                audience.
+
+                        </p>
+                        <p>
+
+                                Want your brand to stand out? Contact me if you need help with any design project or
+                                want to
+                                boost your personal brand.
+                        </p>
+                </section>
+        </section>
+
+        <!-- <section id="projects">
+                <header>
+                        <h1 class="mainHeading">My&nbsp;Work</h1>
+                        <a href="projects.html">Check Out More <i class="bi bi-chevron-right"></i></a>
+                </header>
+                <section id="sectionOne">
+                        <img src="images/poster1.png" alt="">
+                        <img src="images/poster5.png" alt="">
+                        <img src="images/poster2.png" alt="">
+                        <img src="images/poster3.png" alt="">
+                        <img src="images/poster4.png" alt="">
+                        <img src="images/poster6.jpg" alt="">
+                        <img src="images/poster7.jpg" alt="">
+                        <img src="images/poster1.png" alt="">
+                        <img src="images/poster5.png" alt="">
+                        <img src="images/poster2.png" alt="">
+                        <img src="images/poster3.png" alt="">
+                        <img src="images/poster6.jpg" alt="">
+                        <img src="images/poster7.jpg" alt="">
+                        <img src="images/poster4.png" alt="">
+                </section>
+                <section id="sectionTwo">
+                        <img src="images/p1.jpg" alt="">
+                        <img src="images/p2.png" alt="">
+                        <img src="images/p1.jpg" alt="">
+                        <img src="images/p2.png" alt="">
+                        <img src="images/p1.jpg" alt="">
+                        <img src="images/p2.png" alt="">
+                        <img src="images/p1.jpg" alt="">
+                        <img src="images/p2.png" alt="">
+                </section>
+                <section id="sectionThree">
+                        <span class="special"><img src="images/logo1.png" alt=""></span>
+                        <span><img src="images/logo2.png" alt=""></span>
+                        <span class="special"><img src="images/logo3.png" alt=""></span>
+                        <span><img src="images/logo4.png" alt=""></span>
+                        <span class="special"><img src="images/logo5.png" alt=""></span>
+                        <span><img src="images/logo1.png" alt=""></span>
+                        <span class="special"><img src="images/logo2.png" alt=""></span>
+                        <span><img src="images/logo3.png" alt=""></span>
+                        <span class="special"><img src="images/logo4.png" alt=""></span>
+                        <span><img src="images/logo5.png" alt=""></span>
+                        <span class="special"><img src="images/logo1.png" alt=""></span>
+                        <span><img src="images/logo2.png" alt=""></span>
+                        <span class="special"><img src="images/logo3.png" alt=""></span>
+                        <span><img src="images/logo4.png" alt=""></span>
+                        <span class="special"><img src="images/logo5.png" alt=""></span>
+                        <span><img src="images/logo1.png" alt=""></span>
+                        <span class="special"><img src="images/logo2.png" alt=""></span>
+                        <span><img src="images/logo3.png" alt=""></span>
+                        <span class="special"><img src="images/logo4.png" alt=""></span>
+                        <span><img src="images/logo5.png" alt=""></span>
+                </section>
+                <section id="bannerBox">
+                        <img src="images/banner1.jpg" alt="">
+                        <img src="images/banner2.jpg" alt="">
+                        <img src="images/banner3.jpg" alt="">
+                        <img src="images/banner4.jpg" alt="">
+                        <img src="images/banner1.jpg" alt="">
+                        <img src="images/banner2.jpg" alt="">
+                        <img src="images/banner3.jpg" alt="">
+                        <img src="images/banner4.jpg" alt="">
+                        <img src="images/banner1.jpg" alt="">
+                        <img src="images/banner2.jpg" alt="">
+                        <img src="images/banner3.jpg" alt="">
+                        <img src="images/banner4.jpg" alt="">
+                        <img src="images/banner1.jpg" alt="">
+                        <img src="images/banner2.jpg" alt="">
+                        <img src="images/banner3.jpg" alt="">
+                        <img src="images/banner4.jpg" alt="">
+                </section>
+        </section> -->
+
+        <section id="testimonial">
+
+                <h1>Testimonial</h1>
+
+                <div>
+                        <div class="card">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGk-lauihL81g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731154401488?e=1737590400&v=beta&t=reNOsPlnVmZLaG39N6Db7Oq8kw45gaj-FueND_3qCVc"
+                                        alt="">
+
+
+                                <div class="infos">
+                                        <p class="description">
+                                                I had an incredible experience working with Tayyaba Khan. She
+                                                truly exceeded my expectations with her attention to detail,
+                                                professionalism, and expertise. She listened carefully to my needs and
+                                                brought my vision to life in ways I hadn't even considered. I'm happier
+                                                with
+                                                the results, and I highly recommend her to anyone for top-quality
+                                                service!
+                                        </p>
+                                </div>
+
+                                <div class="author">
+                                        Haider Ali
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <img src="images/client2.png" alt="">
+
+
+                                <div class="infos">
+                                        <p class="description">
+                                                I recommend Tayyaba Khan as a talented and highly skilled creative
+                                                designer. Tayyaba Khan has demonstrated an
+                                                exceptional sense of style, attention to detail and the ability to
+                                                translate complex ideas into visual solutions. Her work is always
+                                                original and tailored to the client's needs, whether it be branding,
+                                                website layouts or marketing materials.
+                                        </p>
+                                </div>
+
+                                <div class="author">
+                                        — Aleksey Malankin
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGvwCTgiUCtxA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724396148826?e=1735776000&v=beta&t=1VoBp3L8_8FkePEF5Tm8cGvpIiAwDvJGBfjnh7EDWHU"
+                                        alt="">
+
+
+                                <div class="infos">
+                                        <p class="description">
+                                                I had the pleasure of working with Tayyaba Khan on my profile revamp.
+                                                She’s a calm, understanding, and passionate graphic designer who did an
+                                                excellent job. I highly recommend her for any graphic design Because of
+                                                her captivating skills in this field.
+                                        </p>
+                                </div>
+
+                                <div class="author">
+                                        — Abdullah Khan
+                                </div>
+                        </div>
+
+                </div>
+
+        </section>
+
+        <section id="services">
+                <header>
+                        <h1 class="mainHeading">I Provide You</h1>
+                </header>
+                <section>
+
+                        <div>
+                                <img src="images/4.png" alt="">
+                                <h1> Quality&nbsp;Work</h1>
+                        </div>
+                        <div>
+                                <img src="images/5.png" alt="">
+                                <h1>Support&nbsp;&&nbsp;Time</h1>
+                        </div>
+                        <div>
+                                <img src="images/6.png" alt="">
+                                <h1>Professionalism</h1>
+                        </div>
+                        <div>
+                                <img src="images/7.png" alt="">
+                                <h1>Customization</h1>
+                        </div>
+                        <div>
+                                <img src="images/8.png" alt="">
+                                <h1>User&nbsp;Friendliness</h1>
+                        </div>
+                        <div>
+                                <img src="images/9.png" alt="">
+                                <h1>Your&nbsp;Satisfaction</h1>
+                        </div>
+                </section>
+
+        </section>
+
+
+        <footer>
+                <div class="top">
+                        <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                        </ul>
+                </div>
+                <hr>
+                <p>Ready to elevate your brand with stunning designs? Let's collaborate! Reach out today to discuss your
+                        project
+                        and bring your vision to life!</p>
+                <hr>
+                <div class="icons">
+                        <a href="https://www.instagram.com/khan_grafix/"> <i class="bi bi-instagram"></i></a>
+                        <a href="https://www.fiverr.com/tayyabakhan266"> <img src="images/fiverr.jpg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/tayyaba-khan%F0%9F%90%BC-071b842b3/"> <i
+                                        class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/923284532395"> <i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.behance.net/tayyabakhan16"><i class="bi bi-behance"></i></a>
+                        <a href="mailto:tayyabakhan2666@gmail.com"><i class="bi bi-envelope"></i></a>
+
+                </div>
+        </footer>
+</body>
+
+<!-- <script  src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+        AOS.init();
+</script> -->
+
+</html>

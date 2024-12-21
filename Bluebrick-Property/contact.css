@@ -1,0 +1,29 @@
+#contact{
+    background-color: #112990;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    gap: 15px;
+
+    
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    input{
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: 0px;
+    }
+    textarea{
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: 0px;
+    }
+
+}

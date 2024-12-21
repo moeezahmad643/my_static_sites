@@ -1,0 +1,58 @@
+#image-section {
+  background-color: #112990;
+  color: white;
+  padding: 3vw;
+
+
+  h1{
+    font-size: 50px;
+  }
+
+
+  #images-box {
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    gap: 30px;
+    justify-content: center;
+    div {
+      border-radius: 10px;
+      position: relative;
+      button {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 10px 30px;
+        border-radius: 5px;
+
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+        transition: all 0.5s;
+      }
+      button:hover{
+            background-color: #112990;
+            color: white;
+      }
+    }
+
+    #box1 {
+      width: 300px;
+      height: 500px;
+      background-image: url(https://cms.interiorcompany.com/wp-content/uploads/2023/11/simple-house-design-stick-with-the-classics.png);
+      background-position: center;
+    }
+    #box2 {
+      width: 500px;
+      height: 300px;
+      background-image: url(https://3.imimg.com/data3/FM/MD/MY-1906485/hotel-booking.jpg);
+      background-position: center;
+    }
+    #box3 {
+      height: 500px;
+      width: 300px;
+      background-image: url(https://media.istockphoto.com/id/187044950/photo/new-construction-siding-roof-gutters-entry-door.jpg?s=612x612&w=0&k=20&c=KkHwY742ffGV7mDLazz8iR0kBre44QmmyT5o8IhuU-0=);
+      background-position: center;
+    }
+  }
+}

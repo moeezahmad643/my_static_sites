@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* font-size: x-large; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(28, 28, 28);
+    color: rgb(249, 249, 249);
+    padding:30px 5vw;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        list-style: none;
+        li {
+            a {
+                text-decoration: none;
+                color: rgb(249, 249, 249);
+                transition: all 0.2s;
+            }
+            a:hover {
+                color: rgb(0, 255, 251);
+                text-shadow: 0 0 12px  rgb(0, 255, 251);
+            }
+        }
+    }
+}

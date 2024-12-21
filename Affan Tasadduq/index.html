@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affan Tasadduq</title>
+    <link rel="shortcut icon" href="images/pp.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/Skill.css">
+    <link rel="stylesheet" href="style/work-with-me.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/clients.css">
+</head>
+
+<body>
+    <div class="point"></div>
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <div class="bubble bubble5"></div>
+
+    <nav>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <img style="width: 30px;" src="images/pp.png" alt="Logo">
+            <h1>Affan&nbsp;Tasadduq</h1>
+        </div>
+
+        <ul id="main">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects-Cover">Projects</a></li>
+        </ul>
+
+        <i id="navIcon" class="bi bi-list" style="color: white; font-size: 24px; cursor: pointer;"></i>
+
+        <ul id="sec" style="display: none;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects-Cover">Projects</a></li>
+        </ul>
+    </nav>
+
+    <script>
+
+        window.addEventListener('resize', manageNavbar);
+        window.addEventListener('load', manageNavbar);
+
+        function manageNavbar() {
+            if (window.innerWidth < 600) {
+                // Display mobile view
+                document.getElementById('navIcon').style.display = 'block';
+                document.getElementById('main').style.display = 'none';
+                document.getElementById('sec').style.display = 'none'; // Hide the mobile menu initially
+
+                // Add toggle functionality
+                let toggle = false;
+                document.getElementById('navIcon').addEventListener('click', function () {
+                    toggle = !toggle;
+                    document.getElementById('sec').style.display = toggle ? 'block' : 'none';
+                });
+            } else {
+                // Display desktop view
+                document.getElementById('navIcon').style.display = 'none';
+                document.getElementById('main').style.display = 'flex';
+                document.getElementById('sec').style.display = 'none';
+            }
+        }
+
+    </script>
+
+    <header id="header">
+
+        <div id="textBox">
+            <div id="textArea">
+                <h1 class="mini-text">Hi There, I am</h1>
+                <h1 class="mainHeading" id="main-heading">Affan&nbsp;Tasadduq</h1>
+                <h1 class="cursiveHeading">A Professional Video Editor that transform ideas into visually compelling
+                    stories that captivate audiences and deliver results with 5 year of Experience</h1>
+            </div>
+            <div id="buttonArea">
+                <a href="#projects-Cover"> <button class="mainBtn">Projects</button></a>
+                <a href="#contact"> <button class="secBtn">Contact <i class="bi bi-chevron-right"></i></button></a>
+            </div>
+            <div id="IconBox">
+                <a href=" https://www.instagram.com/affantasadduq/">
+                    <img src="images/instagram.png" alt='picture'></a>
+                <a href="https://www.linkedin.com/in/affan-tasadduq-1212002b5/?originalSubdomain=pk">
+                    <img src="images/linkedin.png" alt='picture'></a>
+                <a href=" https://www.fiverr.com/sagamerzzz">
+                    <img src="images/fiverr.jpg" alt='picture'></a>
+                <a href="https://www.upwork.com/freelancers/~018dd3eb5e4e7beb24">
+                    <img src="images/image.png" alt='picture'></a>
+                <a href="https://wa.me/923287428100">
+                    <img src="images/whatsapp.png" alt='picture'></a>
+
+            </div>
+        </div>
+        <div id="imageBox">
+            <img src="images/pp.png" alt='picture'>
+        </div>
+    </header>
+
+    <section id="about">
+        <section id="aboutSection">
+            <h1 class="mainHeading">About&nbsp;Me</h1>
+            <p>
+                My name is Affan Tasadduq, and I’m a professional video editor with 5 years of experience turning
+                creative visions into reality. I specialize in crafting professional long-form videos and high-quality
+                reel video ads designed to captivate audiences and drive results.
+            </p>
+
+
+
+            <p>From storytelling that keeps viewers engaged to visuals that leave a lasting impression, I bring a unique
+                blend of creativity, technical expertise, and attention to detail to every project. Whether it’s a
+                dynamic ad campaign or a cinematic narrative, my goal is to deliver content that not only looks
+                exceptional but also resonates with its target audience.
+            </p>
+
+
+
+
+            <p>I’m passionate about collaborating with brands, creators, and businesses to transform ideas into
+                impactful visuals that stand out in today’s competitive digital space. Let’s work together to create
+                videos that inspire, connect, and deliver results!
+            </p>
+        </section>
+    </section>
+
+    <section id="projects-Cover">
+        <h1>My Work</h1>
+
+        <h2>Long Video </h2>
+
+        <section id="projects" class="long-video">
+            <iframe src="https://www.youtube.com/embed/6eZ_9mfAtmg" title="Facts That Can SAVE Your Life 👀"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/CXHx6Utalpk" title="Random Facts To Surprise You 20 👀"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/k8dkxkcXjZE" title="Random Facts You Didn&#39;t Know 13"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/U4pv-jniixQ" title="Interesting Facts About Pakistan| Factotary"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/qGOZP4LWa_Q"
+                title="Interesting facts 🔥 about Pakistan #shorts #pakistan" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SYVP4Y5PZBU"
+                title="Top 10 Interesting Facts About Pakistan🇵🇰  #shorts #viral #top10 #topten #ytshorts #pakistan"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <h2>Short Video </h2>
+
+        <section id="projects" class="short-video">
+
+            <iframe src="https://drive.google.com/file/d/1E66DFMIYdgRWgv7focnPnovxp1NvJtoa/preview"
+                allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1VPogz6wSecEuoHfwNVOcidrJqe_NyFm-/preview"
+                allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1CHYDxF92xN1mnahspkjqr7DMxTwK2YmM/preview"
+                allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1WSMUJWwQoum-ZLFTHTKHkgd088XFpYqx/preview"
+                allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1q3jxUcpfJeghHv0vdRaI6AGJAqKBYp-j/preview"
+                allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1RKEHIKyApO-w3gGgMcNmlK0MiYlhi2h8/preview"
+                allow="autoplay"></iframe>
+
+        </section>
+
+
+        <!-- <h2>Video Ads</h2>
+
+        <section id="projects" class="long-video">
+            <iframe src="https://drive.google.com/file/d/1sELLc_BJUFRG0le2n79TpMmBeHGN4LOu/preview"
+                allow="autoplay"></iframe>
+
+
+            <iframe src="https://drive.google.com/file/d/146IreKtiMsD70J8_Z5UhressLn2ZNPWT/preview"
+                allow="autoplay"></iframe>
+
+            <iframe src="https://drive.google.com/file/d/1DUi5CeclXNGmUtIh4F39rMffgmCrWLyh/preview"
+                allow="autoplay"></iframe>
+
+            <iframe src="https://drive.google.com/file/d/1PyYDoGmBKlGMvN88gDruBunqyCwNEcV2/preview"
+                allow="autoplay"></iframe>
+
+            <iframe src="https://drive.google.com/file/d/1Tz_VbaRs8xUcWq2MJ-pIqUh2pCJaY_hN/preview"
+                allow="autoplay"></iframe>
+
+            <iframe src="https://drive.google.com/file/d/1gRUlk7s77yKjauI08ecNRvbytldOpTjv/preview"
+                allow="autoplay"></iframe>
+
+            <iframe src="https://drive.google.com/file/d/1nKl2439E9MocrXF8aje9tSpj4KIwy6Qo/preview"
+                allow="autoplay"></iframe>
+
+        </section> -->
+        
+    </section>
+
+
+    <section class="main">
+        <h1 class="mainHeading">My Services For You</h1>
+
+        <div id="services">
+            <div>
+                <img src="images/vidioediting.png" alt="Instagram Ads">
+                <h2>Video Editing</h2>
+                <p>Seamlessly assembling clips, transitions, and effects to create a cohesive and engaging story.
+                </p>
+            </div>
+            <div>
+                <img src="images/colorgrading.png" alt="Facebook Ads">
+                <h2>Color Grading</h2>
+                <p>Enhancing the visual tone and mood of your video for a professional finish.
+                </p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/59/b6/2b/59b62b1fd7026798d4b413de2bde785f.gif"
+                    alt="TikTok Ads">
+                <h2>Motion Graphics</h2>
+                <p>Seamlessly assembling clips, transitions, and effects to create a cohesive and engaging story.
+                </p>
+            </div>
+            <div>
+                <img src="images/audioEnhancement.png" alt="LinkedIn Ads">
+                <h2>Audio Enhancement</h2>
+                <p>Ensuring crisp sound quality with noise reduction, syncing, and music integration and make a
+                    professional audio.</p>
+            </div>
+            <div>
+                <img src="https://indzone.in/assets/img/gif/webdesigngif.gif">
+                <h2>Storyboarding & Concept Development</h2>
+                <p>Collaborating with you to refine your vision and structure your story.</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/f0/f5/cd/f0f5cd7a0626dffffea966b2528868e2.gif"
+                    alt="Social Media Management">
+                <h2>Social Media Optimization</h2>
+                <p>Tailoring videos for platforms like YouTube, Instagram, and TikTok to maximize reach and
+                    engagement.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="Skill-container">
+
+        <h1>Tools and Expertise</h1>
+
+        <div>
+            <div>
+                <img src="images/pr.png" alt="">
+                <h2>Adobe Premiere Pro</h2>
+                <p>For precise video editing and storytelling.
+                </p>
+            </div>
+            <div>
+                <img src="images/Ae.png" alt="">
+                <h2>Adobe After Effect</h2>
+                <p>To add motion graphics and dynamic visual effects.</p>
+            </div>
+            <div>
+                <img src="images/ps.png" alt="">
+                <h2>Adobe PhotoShop</h2>
+                <p>To create some cool graphics.</p>
+            </div>
+            <div>
+                <img src="images/Ds.png" alt="">
+                <h2>DaVinci Resolve</h2>
+                <p>For advanced color grading.</p>
+            </div>
+            <div>
+                <img src="images/au.png" alt="">
+                <h2>Audacity</h2>
+                <p>For professional-grade audio enhancements.</p>
+            </div>
+            <div>
+                <img src="images/ai.png" alt="">
+                <h2>AI tools</h2>
+                <p>To keep your videos relative to the trends.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="main">
+        <h1>My Client's Thoughts</h1>
+        <div class="SatisfiedClient">
+            <div>
+                <img src="images/client1.png" alt="">
+                <p>Affan Tasadduq is the editor you want in your corner. His ability to understand your vision and bring
+                    it to
+                    life is remarkable. He’s efficient, reliable, and incredibly talented!</p>
+                <div class="starBox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>Yogi Aaron</h3>
+            </div>
+            <div>
+                <img src="images/client2.png" alt="">
+                <p>I’ve collaborated with Affan Tasadduq on multiple projects, and his attention to detail is unmatched.
+                    He
+                    brings creativity and precision to every edit, transforming raw footage into masterpieces. Highly
+                    recommended!</p>
+                <div class="starBox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>David Tomic</h3>
+            </div>
+            <div>
+                <img src="images/client3.png" alt="">
+                <p>Affan Tasadduq is a true professional. His video editing skills are exceptional, and he always
+                    delivers on
+                    time. Working with him has been an absolute pleasure, and the results have exceeded my expectations
+                    every time.</p>
+                <div class="starBox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>Fahri Aksoy </h3>
+            </div>
+
+            <div>
+                <img src="images/client4.png" alt="">
+                <p>I really enjoyed working with Affan Tasadduq. His attention to detail, creativity, and storytelling
+                    in video
+                    editing were great. He was very responsive, polite, and proactive in communication, making the
+                    collaboration enjoyable and productive. I hope we can have a long working relationship!</p>
+                <div class="starBox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>OCD Coach</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="work-container">
+
+        <h1>Why Work With Me?</h1>
+
+        <div>
+            <div>
+                <img src="images/atention.png" alt="">
+                <h2>Attention to Detail</h2>
+                <p>I leave no frame unchecked, ensuring every aspect of your video is polished and professional.
+                </p>
+            </div>
+            <div>
+                <img src="images/delivery.jpg" alt="">
+                <h2>Timely Delivery</h2>
+                <p>Deadlines matter, and I make it a point to deliver on time, every time.</p>
+            </div>
+            <div>
+                <img src="images/story.png" alt="">
+                <h2>Creative Storytelling</h2>
+                <p> I bring fresh ideas to the table, crafting narratives that engage and inspire.</p>
+            </div>
+            <div>
+                <img src="images/collaborative.png" alt="">
+                <h2>Collaborative Approach</h2>
+                <p> Your vision is my priority. I work closely with you to understand your goals and exceed
+                    expectations.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer id="contact">
+
+
+        <h1>Let’s Connect </h1>
+
+        <p>Let’s bring your vision to life! Whether you need a short clip for social media or a full-length feature,
+            I’m
+            here to help. Reach out today to discuss your project and explore how we can work together.
+        </p>
+
+        <div id="IconBox">
+            <a href=" https://www.instagram.com/affantasadduq/">
+                <img src="images/instagram.png" alt='picture'></a>
+            <a href="https://www.linkedin.com/in/affan-tasadduq-1212002b5/?originalSubdomain=pk">
+                <img src="images/linkedin.png" alt='picture'></a>
+            <a href=" https://www.fiverr.com/sagamerzzz">
+                <img src="images/fiverr.jpg" alt='picture'></a>
+            <a href="https://www.upwork.com/freelancers/~018dd3eb5e4e7beb24">
+                <img src="images/image.png" alt='picture'></a>
+            <a href="https://wa.me/923287428100">
+                <img src="images/whatsapp.png" alt='picture'></a>
+
+        </div>
+        <div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  padding: 5vw;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-size: 5vmax;
+    }
+    p {
+      font-size: large;
+      width: 90%;
+      line-height: 30px;
+      color: gray;
+    }
+
+    .email-part {
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+      input {
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 40%;
+        padding: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 30%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    > div {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        width: 100% !important;
+      }
+    }
+
+    img {
+      width: 50%;
+      min-width: 280px;
+    }
+  }
+}

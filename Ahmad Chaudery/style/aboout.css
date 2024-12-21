@@ -1,0 +1,43 @@
+#about {
+    background-color: orange;
+    color: white;
+    padding: 5vw;
+
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: medium;
+        margin: 5px;
+        text-align: justify;
+    }
+}
+
+#footer {
+    padding: 40px;
+    background-color: black;
+    div {
+        gap: 5vw;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    i {
+        transition: all 0.3s;
+    }
+    i:hover {
+        transform: scale(1.2);
+    }
+    p {
+        font-size: 20px;
+        text-wrap: nowrap;
+        padding: 20px;
+    }
+    .text-box{
+        gap: 0;
+    }
+}

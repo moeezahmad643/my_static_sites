@@ -1,0 +1,32 @@
+#work {
+  display: flex;
+  color: white;
+  gap: 30px;
+  justify-content: space-evenly;
+  padding: 5vw;
+  flex-wrap: wrap;
+  .card {
+    width: 27vw;
+    min-width: 250px;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw;
+    gap: 40px;
+    span {
+      text-align: center;
+
+      h1 {
+        padding: 15px;
+      }
+      p{
+        font-size: small;
+      }
+    }
+    i {
+      font-size: 70px;
+    }
+  }
+}

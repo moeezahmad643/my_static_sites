@@ -1,0 +1,118 @@
+.section2 {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    p {
+      letter-spacing: 2px;
+      color: rgb(100, 100, 100);
+    }
+    h1 {
+      color: orange;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  .bottom {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > section {
+      width: 90%;
+      height: 200px;
+      display: flex;
+
+      > div {
+
+        width: 45%;
+        box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.352);
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        gap: 30px;
+        transition: all 0.5s;
+        span {
+          h3 {
+            font-size: medium;
+            color: orange;
+            transition: all 0.5s;
+          }
+        }
+        img {
+          height: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+        }
+        p{
+          font-size: small;
+        }
+      }
+      > div:hover{
+        scale: 1.05;
+        border-radius: 10px;
+        
+        h3{
+          scale: 1.05;
+
+        }
+      }
+
+      .part1 {
+        flex-direction: row;
+      }
+      .part2 {
+        flex-direction: row-reverse;
+      }
+    }
+    .p1 {
+      justify-content: start;
+    }
+    .p2 {
+      justify-content: end;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .p1 {
+    justify-content: center !important;
+  }
+  .p2 {
+    justify-content: center !important;
+  }
+  .bottom {
+    gap: 30px;
+    > section {
+      /* border: 1px solid orange; */
+      div {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bottom {
+    gap: 15px;
+    padding: 0 !important;
+    > section {
+      gap: 5px;
+      div {
+        
+        width: 100% !important;
+        padding: 10px !important;
+        gap: 5px;
+      p{
+        font-size: x-small !important;
+      }
+        img{
+            width: 100px !important;
+            height: 100px !important;
+        }
+      }
+    }
+  }
+}

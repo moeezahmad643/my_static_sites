@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>Saeed Ahmad</title>
+        <style>
+                @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+                * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                html,
+                body {
+                        width: 100%;
+                        overflow-x: hidden;
+                }
+
+                body {
+                        background-color: rgb(255, 246, 225);
+
+                        h1 {
+                                font-size: 5vmax;
+                        }
+
+                        p {
+                                font-size: 2vmax;
+                        }
+                }
+
+                .mainLine {
+                        font-family: "Caveat", cursive;
+                        /* font-optical-sizing: auto; */
+                        font-weight: 300;
+                        font-style: normal;
+                }
+
+                .button {
+                        background-color: rgb(255, 166, 0);
+                        padding: 10px 17px;
+                        margin: 10px;
+                        border-radius: 2px;
+                        font-size: 1.8vmax;
+                        color: white;
+                        border: none;
+                        transition: all 0.2s;
+                }
+
+                .button:hover {
+                        background-color: black;
+
+                }
+
+                nav {
+                        font-size: 10rem;
+                        display: flex;
+                        justify-content: space-around;
+
+                        padding: 2vw 10vmax;
+                        padding: 2vw 0vmax;
+                        gap: 30px;
+                        align-items: center;
+                        font-size: x-large;
+                        flex-wrap: wrap;
+
+                        h1 {
+                                font-size: x-large;
+                        }
+
+                        ul {
+                                font-size: large;
+                                display: flex;
+                                align-items: center;
+                                list-style: none;
+                                gap: 30px;
+                        }
+                }
+
+                header {
+                        display: flex;
+                        padding: 5vw 10vw;
+                        align-items: center;
+                        gap: 20px;
+
+                        .textBox {
+                                width: 60%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                gap: 5px;
+
+                                h1 {
+                                        font-size: 5vmax;
+                                }
+
+
+
+                                p {
+                                        font-size: 2vmax;
+                                }
+
+
+                        }
+
+                        .imgBox {
+                                width: 40%;
+                                border-radius: 50%;
+                                background-color: rgb(255, 166, 0);
+                                display: grid;
+                                place-items: center;
+                                aspect-ratio: 1/1;
+                                overflow: hidden;
+
+                                img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        transition: all 0.2s;
+                                }
+
+                                img:hover {
+                                        transform: scale(1.1);
+                                }
+                        }
+                }
+
+                @media screen and (max-width:700px) {
+                        header {
+                                display: flex;
+                                flex-wrap: wrap-reverse;
+                        }
+
+                        .textBox {
+                                width: 100vw !important;
+                        }
+
+                        .imgBox {
+                                width: 100vw !important;
+                        }
+                }
+
+                #About {
+                        padding: 5vw;
+
+                        h1 {
+                                font-size: 5vmax;
+                        }
+
+                        p {
+                                font-size: 1.5vmax;
+                                text-align: justify;
+                                text-indent: 0.5vw;
+                        }
+                }
+
+                #experience {
+                        background-color: rgb(255, 166, 0);
+                        color: white;
+                        text-shadow: 0 0 1px black;
+                        padding: 5vw;
+
+                        >section {
+                                padding: 40px 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                                gap: 20px;
+
+                                div {
+                                        /* flex-basis: 20% !important; */
+                                        padding: 20px;
+                                        width: 20vmax;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        border: 3px dashed rgba(0, 0, 0, 0.594);
+                                        border-radius: 2px 20px 2px 2px;
+                                        transition: all 2s;
+                                        position: relative;
+
+                                        h1 {
+                                                font-size: 5vmax;
+                                        }
+
+                                        p {
+                                                font-size: 2vmax;
+
+                                        }
+                                }
+
+                                div:hover {
+                                        border: 3px solid rgba(0, 0, 0, 0.594);
+                                }
+
+                                @media screen and (max-width:400px) {
+                                        div{
+                                                width: 100%;
+                                        }
+                                }
+
+                                .bi {
+                                        background-color: black;
+                                        color: white;
+                                        position: absolute;
+                                        top: -20px;
+                                        left: 10px;
+                                        padding: 10px;
+                                        font-size: 20px;
+                                }
+                        }
+                }
+
+                #project {
+                        padding: 5vw;
+
+                        >section {
+                                padding: 5vw 0;
+                                display: flex;
+                                justify-content: space-evenly;
+                                gap: 4vmax;
+                                flex-wrap: wrap;
+
+                                img {
+                                        width: 25vw;
+                                        object-fit: cover;
+                                        transition: all 0.2s;
+                                        box-shadow: 2px 2px 12px 2px rgba(128, 128, 128, 0.497);
+                                }
+
+                                img:hover {
+                                        transform: scale(1.1);
+                                }
+                        }
+
+                        @media screen and (max-width:500px) {
+                                section{
+                                gap: 10px;
+                                img{
+                                        width: 100%;
+                                }
+                                }
+                        }
+                }
+
+                #footer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        >div {
+                                align-items: center;
+                                display: flex;
+                                width: 50vmax;
+                                margin: 30px;
+
+                                justify-content: space-evenly;
+
+                                img {
+                                        width: 50px;
+                                        transition: all 0.2s;
+                                }
+
+                                img:hover {
+                                        transform: scale(1.1);
+                                }
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <nav>
+                <h1>Faiza&nbsp;Nawaz</h1>
+                <ul>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>Work</li>
+                </ul>
+        </nav>
+        <header>
+                <div class="textBox">
+                        <h1>Faiza&nbsp;Nawaz</h1>
+                        <p class="mainLine">Professional Wordpress Developer & <br> Digital Marketting Expert </p>
+                        <button class="button">Contact Now</button>
+                </div>
+                <div class="imgBox">
+                        <img src="pp1-removebg-preview.png" alt="">
+                </div>
+        </header>
+        <section id="experience">
+                <h1>Experience</h1>
+                <section>
+                        <div>
+                                <i class="bi bi-person-fill"></i>
+                                <h1>49+</h1>
+                                <p>Company&nbsp;Experience</p>
+                        </div>
+                        <div>
+                                <i class="bi bi-cast"></i>
+                                <h1>99+</h1>
+                                <p>Completed&nbsp;Project</p>
+                        </div>
+                        <div>
+                                <i class="bi bi-book"></i>
+                                <h1>3</h1>
+                                <p>Year&nbsp;Experience</p>
+                        </div>
+                        <div>
+                                <i class="bi bi-award-fill"></i>
+                                <h1>9</h1>
+                                <p>Awards</p>
+                        </div>
+                </section>
+        </section>
+        <div id="About">
+                <h1>About</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, cum totam animi laudantium
+                        inventore consequatur, minus maxime nostrum vitae incidunt culpa sit quae nam natus omnis
+                        dolorem quas minima veritatis!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum ut odio eum iure. In soluta fuga eveniet odio harum. Cum laudantium temporibus et
+                        praesentium magnam nulla consequatur, veritatis exercitationem doloribus. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Quisquam, quidem! Saepe quisquam veritatis perspiciatis quis,
+                        ea provident obcaecati cupiditate impedit? Praesentium repellat corporis facere, perferendis
+                        dolorem veniam ad quia commodi officia esse nisi saepe, maxime alias delectus vel! A, tempore?
+                </p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, cum totam animi laudantium
+                        inventore consequatur, minus maxime nostrum vitae incidunt culpa sit quae nam natus omnis
+                        dolorem quas minima veritatis!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum ut odio eum iure. In soluta fuga eveniet odio harum. Cum laudantium temporibus et
+                        praesentium magnam nulla consequatur, veritatis exercitationem doloribus. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Quisquam, quidem! Saepe quisquam veritatis perspiciatis quis,
+                        ea provident obcaecati cupiditate impedit? Praesentium repellat corporis facere, perferendis
+                        dolorem veniam ad quia commodi officia esse nisi saepe, maxime alias delectus vel! A, tempore?
+                </p>
+                <br>
+        </div>
+        <div id="project">
+                <h1>My Super Hit Project</h1>
+                <p class="mainLine">My Awsome Projects from where I got 5 Star</p>
+                <section>
+                        <img src="project1.png" alt="">
+                        <img src="project2.png" alt="">
+                        <img src="project3.png" alt="">
+                        <img src="project4.png" alt="">
+                        <img src="project5.png" alt="">
+                        <img src="project6.png" alt="">
+                </section>
+                <div style="display: flex; justify-content: center; ">
+                        <button class="button">See All Projects</button>
+                </div>
+        </div>
+
+        <div id="footer">
+                <h1 class="mainLine">Say me Hi on</h1>
+                <div>
+                        <img src="instagram.png" alt="">
+                        <img src="facebook.png" alt="">
+                        <img src="youtube.png" alt="">
+                        <img src="linkedin.png" alt="">
+                </div>
+        </div>
+</body>
+
+</html>

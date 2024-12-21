@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>Fatima Aslam</title>
+        <style>
+                @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+                @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+
+                * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                html,
+                body {
+                        width: 100%;
+                        overflow-x: hidden;
+                }
+
+                body {
+                        background-color: rgb(236, 237, 252);
+
+                        h1 {
+                                font-size: 4.5vmax;
+                        }
+
+                        p {
+                                font-size: 2vmax;
+                        }
+                }
+
+                .mainLine {
+                        font-family: "Edu VIC WA NT Beginner", cursive;
+                        font-optical-sizing: auto;
+                        font-weight: 300;
+                        font-style: normal;
+                }
+
+                .main {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 3vw;
+
+                        h1 {
+                                text-align: center;
+                                padding: 20px 0px;
+                                font-family: "Oswald", sans-serif;
+                                font-optical-sizing: auto;
+                                font-weight: 400;
+                                font-style: normal;
+
+                        }
+                }
+
+                .button {
+                        background-color: #415BDE;
+                        padding: 10px 17px;
+                        margin: 10px;
+                        border-radius: 2px;
+                        font-size: 1.7vmax;
+                        color: white;
+                        border: none;
+                        transition: all 0.2s;
+                }
+
+                .button:hover {
+                        background-color: black;
+
+                }
+
+                nav {
+                        font-size: 10rem;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 2vw 10vw;
+                        gap: 30px;
+                        align-items: center;
+                        font-size: x-large;
+                        flex-wrap: wrap;
+
+                        h1 {
+                                font-size: 2vmax;
+                        }
+
+                        ul {
+                                font-size: 1.5vmax;
+                                display: flex;
+                                align-items: center;
+                                list-style: none;
+                                gap: 30px;
+
+                        }
+                }
+
+                header {
+                        display: flex;
+                        padding: 5vw 10vw;
+                        align-items: center;
+                        gap: 20px;
+
+                        .textBox {
+                                width: 60%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                gap: 5px;
+
+                                h1 {
+                                        font-size: 4.5vmax;
+                                }
+
+
+
+                                p {
+                                        font-size: 2vmax;
+                                }
+
+
+                        }
+
+                        .imgBox {
+                                width: 40%;
+                                border-radius: 50%;
+                                background-color: #415BDE;
+                                display: grid;
+                                place-items: center;
+                                aspect-ratio: 1/1;
+                                overflow: hidden;
+
+                                img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        transition: all 0.2s;
+                                }
+
+                                img:hover {
+                                        transform: scale(1.1);
+                                }
+                        }
+                }
+
+                @media screen and (max-width:700px) {
+                        header {
+                                display: flex;
+                                flex-wrap: wrap-reverse;
+                        }
+
+                        .textBox {
+                                width: 100vw !important;
+                        }
+
+                        .imgBox {
+                                width: 100vw !important;
+                        }
+                }
+
+                .workWith {
+                        background-color: #415BDE;
+                        display: flex;
+                        justify-content: stretch;
+                        color: white;
+
+                        div {
+                                padding: 50px 20px;
+                                width: 100%;
+                                align-items: center;
+                                text-align: center;
+
+                                img {
+                                        width: 50%;
+                                }
+                        }
+                }
+
+
+                .SatisfiedClient {
+                        background-color: transparent;
+                        display: flex;
+                        justify-content: center;
+                        align-items: stretch;
+                        gap: 20px;
+                        flex-wrap: wrap;
+
+                        >div {
+                                background-color: white;
+                                padding: 50px 20px;
+                                min-width: 300px;
+                                max-width: 30vw;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-align: center;
+                                justify-content: space-evenly;
+                                font-size: 2vmax;
+                                border: 2px solid rgb(237, 237, 237);
+                                padding: 2vw;
+                                gap: 20px;
+
+
+                                img {
+                                        width: 50%;
+                                        border-radius: 500px;
+                                        aspect-ratio: 1/1;
+                                        object-fit: contain;
+                                        border: 2px solid rgb(237, 237, 237);
+                                }
+
+                                p {
+                                        font-size: medium;
+                                        text-align: justify;
+                                        margin: 10px;
+                                }
+
+                                .starBox {
+                                        display: flex;
+                                        gap: 2px;
+                                        justify-content: center;
+                                        padding: 0;
+
+                                        span {
+                                                background-color: rgb(255, 247, 0);
+                                                height: 2vmax;
+                                                width: 2vmax;
+                                                aspect-ratio: 1/1;
+                                                padding: 0;
+                                                margin: 0;
+                                                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+                                        }
+
+                                }
+                        }
+                }
+
+                #services {
+
+                        flex-wrap: wrap;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        gap: 3vw;
+
+                        div {
+                                border: 2px solid rgb(237, 237, 237);
+                                background-color: white;
+                                padding: 30px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 2vw;
+                                border-radius: 10px;
+                                min-width: 20vw;
+                                max-width: 400px;
+
+                                p {
+                                        font-size: medium;
+                                }
+                        }
+
+                        img {
+                                aspect-ratio: 1/1;
+                                object-fit: contain;
+                                width: 100px;
+                        }
+                }
+
+                #contact {
+                        padding: 2vw 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 3vw;
+
+                        img {
+                                width: 50px;
+                        }
+                }
+
+                #footer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        >div {
+                                align-items: center;
+                                display: flex;
+                                width: 50vmax;
+                                margin: 30px;
+
+                                justify-content: space-evenly;
+
+                                img {
+                                        width: 50px;
+                                        transition: all 0.2s;
+                                }
+
+                                img:hover {
+                                        transform: scale(1.1);
+                                }
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <nav>
+                <h1>Fatima&nbsp;Aslam</h1>
+                <ul>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>Work</li>
+                </ul>
+        </nav>
+        <header>
+                <div class="textBox">
+                        <p class="mainLine">Hi I'am Fatima&nbsp;Aslam.</p>
+                        <h1>Digital&nbsp;Marketting Expert </h1>
+                        <p class="mainLine">Let's Build Your Online Presence & Grow Your Business.</p>
+                       <a href="https://www.linkedin.com/in/fatima-aslam-digital-marketer/"> <button class="button">Contact Now</button></a>
+                </div>
+                <div class="imgBox">
+                        <img src="images/pp1 (1).png" alt="">
+                </div>
+        </header>
+        <div class="workWith">
+                <div>
+                        <p>Satisfied Client</p>
+                        <h1>50+</h1>
+                </div>
+                <div>
+                        <h1>48+</h1>
+                        <p>Month Experience</p>
+                </div>
+                <div>
+                        <p>Services</p>
+                        <h1>10+</h1>
+                </div>
+        </div>
+
+        <section class="main">
+                <h1>My Client's Thoughts</h1>
+                <div class="SatisfiedClient">
+                        <div>
+                                <img src="images/client1.jpg" alt="">
+                                <p>Fatima has made a tremendous impact on our business. Initially, our online presence
+                                        was
+                                        minimal, and our digital marketing strategy was lacking. Fatima's expertise and
+                                        innovative approach quickly turned things around. Within months, we saw dramatic
+                                        improvements in our online presence and marketing results.</p>
+                                <div class="starBox">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                </div>
+                                <h3>Mia Crown</h3>
+                        </div>
+                        <div>
+                                <img src="images/client2.jpg" alt="">
+                                <p>Fatima's exceptional skills have transformed our business. Their work in content
+                                        creation,
+                                        social media optimization, and ad campaigns has made us a leader in our
+                                        industry. We've
+                                        experienced a significant boost in brand visibility, customer engagement, and
+                                        conversions thanks to their efforts.</p>
+                                <div class="starBox">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                </div>
+                                <h3>Alex John</h3>
+                        </div>
+                        <div>
+                                <img src="images/client3.jpg" alt="">
+                                <p>Fatima's dedication and adaptability have been crucial to our success. Their
+                                        proactive
+                                        communication and strategic insights have propelled us from an unknown entity to
+                                        a top
+                                        player in our market. Their expertise and hard work are highly commendable and I
+                                        recommend them to anyone looking to elevate.</p>
+                                <div class="starBox">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                </div>
+                                <h3>Shin Smith</h3>
+                        </div>
+                </div>
+        </section>
+
+        <section class="main">
+                <h1>My Services For You</h1>
+
+                <div id="services">
+                        <div>
+                                <img src="images/instagram.png" alt="Instagram Ads">
+                                <h2>Instagram Ads</h2>
+                                <p>I craft eye-catching Instagram ads that resonate with your target audience, driving
+                                        brand
+                                        awareness and boosting engagement to elevate your social media presence.</p>
+                        </div>
+                        <div>
+                                <img src="images/facebookads.png" alt="Facebook Ads">
+                                <h2>Facebook Ads</h2>
+                                <p>My Facebook ad strategies are tailored to your business goals, leveraging precise
+                                        targeting
+                                        to increase leads, conversions, and overall ROI for your advertising spend.</p>
+                        </div>
+                        <div>
+                                <img src="images/TikTok.png" alt="TikTok Ads">
+                                <h2>TikTok Ads</h2>
+                                <p>I create dynamic TikTok ads that capture the essence of your brand, tapping into
+                                        trending
+                                        content to engage younger audiences and amplify your reach.</p>
+                        </div>
+                        <div>
+                                <img src="images/linkedin1.png" alt="LinkedIn Ads">
+                                <h2>LinkedIn Ads</h2>
+                                <p>With expertly designed LinkedIn ads, I focus on connecting with professionals and
+                                        decision-makers, enhancing your B2B visibility and generating high-quality
+                                        business
+                                        leads.</p>
+                        </div>
+                        <div>
+                                <img src="images/seo.png" alt="Website Ranking">
+                                <h2>Website Ranking</h2>
+                                <p>I employ proven SEO techniques to improve your website’s search engine ranking,
+                                        driving
+                                        organic traffic and boosting your online visibility for sustained growth.</p>
+                        </div>
+                        <div>
+                                <img src="images/socialm.png" alt="Social Media Management">
+                                <h2>SM Management</h2>
+                                <p>I handle your social media presence with a strategic approach, ensuring consistent,
+                                        compelling content that aligns with your brand and fosters meaningful audience
+                                        interactions.</p>
+                        </div>
+                </div>
+
+        </section>
+
+
+        <div id="footer">
+                <h1 class="mainLine">Say me Hi on</h1>
+                <div>
+                        <img src="images/instagram1.png" alt="">
+                        <img src="images/facebook.png" alt="">
+                        <img src="images/youtube.png" alt="">
+                        <img src="images/linkedin1.png"1 alt="">
+                </div>
+        </div>
+
+
+</body>
+
+</html>

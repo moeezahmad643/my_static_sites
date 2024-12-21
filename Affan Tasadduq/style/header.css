@@ -1,0 +1,118 @@
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:  4vw;
+    color: black !important;
+
+    #textBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+        padding:0 5vw;
+        #textArea {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            
+            align-items: start;
+            .mini-text{
+                font-weight: 400;
+                padding: 5px 0;
+            }
+            .mainHeading {
+                font-size: 5vw;
+            }
+            .cursiveHeading {
+                font-size: 1.5vw;
+                line-height:30px;
+                padding: 15px 0;
+            }
+        }
+
+        #buttonArea {
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+            align-items: center;
+            & button {
+                font-weight: bold;
+            }
+        }
+        #IconBox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 5vw;
+            padding: 5vw 0;
+            overflow: hidden;
+            & img {
+                width: 4vmax;
+                scale:1.01;
+            }
+        }
+    }
+    #imageBox {
+        & img {
+            width: 35vmax !important;
+            border-radius: 50%;
+            box-shadow: 0 0 15px 1px #272727;
+            transition: box-shadow 0.5s;
+        }
+        & img:hover {
+            border-radius: 50%;
+            box-shadow: 0 0 15px 10px #2c2c2c;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        #textArea {
+            padding: 10px 100px;
+            .mainHeading {
+                font-size: 8vw !important;
+            }
+            .cursiveHeading {
+                font-size: 3vw !important;
+                padding: 15px 0;
+            }
+            .mini-text{
+                font-size: 3vw !important;
+
+            }
+        }
+        #imageBox {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        & div {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        button {
+            font-size: small;
+        }
+
+        #IconBox {
+            padding:  10px 0 !important;
+            justify-content: space-evenly;
+            width: 100%;
+            gap: 0 !important;
+
+            img{
+                width: 50% !important;
+            }
+        }
+    }
+}

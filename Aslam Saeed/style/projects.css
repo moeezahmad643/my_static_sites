@@ -1,0 +1,19 @@
+#projects {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5vw;
+    gap: 3vw;
+
+    iframe {
+        transition: all 0.5s;
+        width: 30%;
+        aspect-ratio: 9/16;
+        min-width: 150px;
+    }
+    iframe:hover {
+        transform: scale(1.06);
+    }
+}

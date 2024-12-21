@@ -1,0 +1,59 @@
+footer {
+  background-color: #060e30;
+  color: white;
+  padding: 5vw;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  #bottom-section {
+    display: flex;
+    justify-content: space-between;
+
+    #left-side {
+      width: 50%;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+      #subscribe-box {
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+        input {
+          background-color: transparent;
+          border: none;
+          padding: 0px 10px;
+        }
+      }
+    }
+    #right-side {
+      width: 40%;
+
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        list-style: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #bottom-section {
+    flex-wrap: wrap-reverse;
+    width: 100% !important;  
+    gap: 10px;
+  }
+  #left-side {
+    width: 100% !important;  
+  }
+  #right-side {
+    width: 100% !important;  
+    margin: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+footer{
+        text-align: center;
+    background-color: #ebf9ff;
+    padding: 5vw;
+
+
+    div{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+
+        img{
+                object-fit: contain;
+                width: 20vmax;
+                mix-blend-mode: multiply;
+        }
+    }
+}

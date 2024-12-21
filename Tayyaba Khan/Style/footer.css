@@ -1,0 +1,51 @@
+:root {
+  --dark-blue: black;
+  --black: #000000;
+  --blue: #0a6ffd;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  .top {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      li {
+        margin-top: 20px !important;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+    margin: 0 10vw;
+  }
+  hr {
+    width: 90%;
+  }
+  .icons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    i {
+      font-size: 4vmax;
+    }
+    img{
+      height: 4vmax;
+      border-radius: 50%;
+    }
+
+  }
+}

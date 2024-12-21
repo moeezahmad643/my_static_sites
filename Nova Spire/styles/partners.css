@@ -1,0 +1,36 @@
+#partners{
+        text-align: center;
+        padding: 5vw;
+
+    background-color: #ebf9ff;
+
+        h1{
+                color: #019bf5;
+        }
+        p{
+                color: black;
+        }
+
+        .images{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                img{
+                        mix-blend-mode: multiply;
+                        background-color: transparent;
+                        width: 500px;
+                        object-fit: contain;
+                        height: 140px;
+                }
+        }
+}
+
+@media screen and (max-width:600px) {
+        #partners .images{
+                img{
+                        width: 90%;
+
+                }
+        }          
+}

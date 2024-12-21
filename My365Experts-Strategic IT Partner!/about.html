@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My365Experts</title>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/expertise.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/quality.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .about-365 {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .container {
+                padding: 8vw;
+            }
+            h1{
+                padding: 10px 0;
+            }
+            p{
+                padding: 10px 0;
+                line-height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <img style="width: 200px;border-radius: 0px;" src="logo.png" alt="Logo">
+        </div>
+
+        <ul id="main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+
+        <i id="navIcon" class="bi bi-list" style="color: white; font-size: 24px; cursor: pointer;"></i>
+
+        <ul id="sec" style="display: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+
+    <script>
+
+        window.addEventListener('resize', manageNavbar);
+        window.addEventListener('load', manageNavbar);
+
+        function manageNavbar() {
+            if (window.innerWidth < 600) {
+                // Display mobile view
+                document.getElementById('navIcon').style.display = 'block';
+                document.getElementById('main').style.display = 'none';
+                document.getElementById('sec').style.display = 'none'; // Hide the mobile menu initially
+
+                // Add toggle functionality
+                let toggle = false;
+                document.getElementById('navIcon').addEventListener('click', function () {
+                    toggle = !toggle;
+                    document.getElementById('sec').style.display = toggle ? 'block' : 'none';
+                });
+            } else {
+                // Display desktop view
+                document.getElementById('navIcon').style.display = 'none';
+                document.getElementById('main').style.display = 'flex';
+                document.getElementById('sec').style.display = 'none';
+            }
+        }
+
+    </script>
+
+    <header style="align-items: center;">
+        <div>
+            <div>
+                <h1>My365Experts Premium About</h1>
+                <p>Learn More About My365Experts</p>
+            </div>
+        </div>
+        <img src="image.png" alt="Header Image">
+    </header>
+
+
+    <section class="about-365">
+        <div class="container">
+            <h1>Who We Are</h1>
+            <p>365 Experts is more than just a team – we are a collective of innovators, strategists, and problem-solvers committed to helping businesses achieve their goals through cutting-edge technology. Our team thrives on collaboration, creativity, and a shared passion for excellence. We understand that in a world driven by constant technological evolution, staying ahead requires a partner who not only understands the trends but also knows how to harness them for your benefit. At 365 Experts, we are dedicated to making technology work for you, creating solutions that empower your business to reach new heights.</p>
+            <p>We believe that every business has the potential to innovate and grow. With this belief, we approach every project with curiosity and determination, ensuring that we understand your unique challenges and vision before crafting a solution. Our team is here to guide you through every step of your journey, providing expertise that not only meets industry standards but sets new ones. We take pride in being the partner businesses can trust to deliver results and drive transformation.</p>
+    
+            <h1>What We Do</h1>
+            <p>At 365 Experts, we specialize in turning challenges into opportunities. Our comprehensive range of services is designed to address the diverse needs of businesses across industries. From leveraging artificial intelligence to improve operational efficiency to developing strategic IT roadmaps that ensure long-term success, we provide solutions that align perfectly with your goals. Every strategy we develop is personalized, ensuring that it fits seamlessly into your business operations while driving measurable results.</p>
+            <p>Our approach goes beyond just fixing problems. We proactively identify areas of improvement and work closely with your team to implement solutions that deliver sustainable growth. Whether it’s through AI-powered automation, custom-tailored software solutions, or advanced IT consulting, we are dedicated to helping your business excel. By focusing on innovation and practicality, we ensure that every solution we deliver not only meets your current needs but also prepares you for the future.</p>
+            <p>Our commitment doesn’t end with implementation. We provide ongoing support, ensuring that our solutions continue to add value to your operations. With 365 Experts by your side, you’ll have the tools and expertise needed to stay competitive in an ever-changing business environment.</p>
+    
+            <h1>Why Choose Us?</h1>
+            <p>At 365 Experts, we understand that choosing the right technology partner is a critical decision. That’s why we make it our mission to provide not just services but a complete experience built on trust, transparency, and collaboration. Our clients choose us because we don’t believe in one-size-fits-all solutions. Instead, we take the time to learn about your business, industry, and unique challenges to craft strategies that are as unique as your business itself.</p>
+            <p>Our team is composed of industry-leading professionals with years of experience in AI, IT consultancy, and business transformation. We bring a wealth of knowledge and a proven track record to every project we undertake. But what truly sets us apart is our unwavering commitment to your success. We measure our achievements by the results we deliver for our clients, whether it’s increased efficiency, improved customer satisfaction, or sustainable growth.</p>
+            <p>When you partner with 365 Experts, you’re not just getting a service provider – you’re gaining a trusted advisor and ally in your journey toward innovation and success. Let us help you navigate the complexities of today’s technological landscape and unlock the full potential of your business. Together, we’ll create a brighter, more successful future.</p>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+    <footer>
+        <div id="top-section">
+            <h1>Ready To Partner With Us?</h1>
+            <p>We're ready to help you succeed. Let’s get started!</p>
+        </div>
+        <div id="bottom-section">
+            <div id="left-side">
+                <h3>365 Experts</h3>
+                <p>At 365 Experts, we specialize in providing cutting-edge technological solutions and consultancy services. Whether it's AI integration, IT strategy, or custom solutions, our team works relentlessly to ensure your business stays ahead of the competition. Our mission is to empower businesses with the tools they need to thrive in a rapidly changing digital world.</p>
+
+            </div>
+            <div id="right-side">
+                <ul>
+                    <h2>Links</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+    
+                <ul>
+                    <h2>Social Media</h2>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

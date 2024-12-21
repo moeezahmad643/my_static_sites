@@ -1,0 +1,102 @@
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vw;
+    #textBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+        #textArea {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            align-items: start;
+            .mainHeading {
+                font-size: 6vw;
+            }
+            .cursiveHeading {
+                font-size: 2vw;
+                padding: 15px 0;
+            }
+        }
+
+        #buttonArea {
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+            align-items: center;
+            & button {
+                font-weight: bold;
+            }
+        }
+        #IconBox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 3vw;
+            padding: 50px 0;
+            & img {
+                width: 4.5vmax;
+                border-radius: 50%;
+            }
+            i{
+                font-size: 4vmax;
+            }
+        }
+    }
+    #imageBox {
+        & img {
+            width: 35vw;
+            border-radius: 50%;
+            clip-path: fill-box;
+            transition: box-shadow 0.5s;
+        }
+        & img:hover {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        #textArea {
+            padding: 10px 100px;
+            .mainHeading {
+                font-size: 10vw !important;
+            }
+            .cursiveHeading {
+                font-size: 3vw !important;
+                padding: 15px 0;
+            }
+        }
+        #imageBox {
+            width: 100%;
+            img {
+                width: 80%;
+            }
+        }
+        & div {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        button {
+            font-size: small;
+        }
+
+        #IconBox {
+            padding:  50px 0 !important;
+            justify-content: space-evenly;
+            width: 100%;
+            gap: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6vw 2vw;
+  gap: 30px;
+
+  .top {
+    font-size: 3vmax;
+    width: 50vw;
+    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: 1rem;
+      border: 1px solid #c7adff;
+      background-color: black;
+      color: #c7adff;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      position: relative;
+      background-color: rgb(17, 17, 17);
+      border: 1px solid #58585850;
+      padding: 20px;
+      width: 45%;
+      min-width: 300px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      text-align: center;
+      -webkit-box-shadow: 1.5px 1px 32px 4px #282828;
+      -moz-box-shadow: 1.5px 1px 32px 4px #282828;
+      box-shadow: 1.5px 1px 32px 4px #282828;
+      transition: max-height 0.5s ease !important;
+      overflow: hidden;
+
+      span {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        h3{
+            text-wrap: none;
+            transition: color 0.3s ease; /* Smooth color change for the heading */
+        }
+        .bi-plus {
+         transition: transform 0.3s ease;
+          /* Smooth rotation for the icon */
+          font-size: large;
+       }
+      }
+
+      
+    
+    p {
+          transition: opacity 0.3s ease; /* Smooth opacity transition for paragraph */
+        letter-spacing: 1px;
+        line-height: 22px;
+        text-align: left;
+        color: gray;
+        display: none;
+      }
+    }
+    div:hover {
+      border: 1px solid #585858;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.top-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .top-box a {
+        color: #019bf5;
+        padding: 10px;
+        text-align: center;
+        font-size: large;
+    }
+    
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .card-body a {
+        width: min-content;
+    }

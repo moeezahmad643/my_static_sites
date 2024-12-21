@@ -1,0 +1,26 @@
+#Payment-options {
+    text-align: center;
+    padding: 5vw;
+    background-color: #ebf9ff;
+
+    h1 {
+        color: #019bf5;
+    }
+    p {
+        color: black;
+        letter-spacing: 1px;
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            mix-blend-mode: multiply;
+            background-color: transparent;
+            width: 100%;
+            object-fit: contain;
+            height: 140px;
+        }
+    }
+}

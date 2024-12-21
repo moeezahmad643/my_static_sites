@@ -1,0 +1,29 @@
+#artical {
+    background-color: #ebf9ff;
+    color: #019bf5;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+
+    .top-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > a {
+            color: #019bf5;
+            padding: 10px;
+            text-align: center;
+            font-size: large;
+        }
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & a {
+            width: min-content;
+        }
+    }
+}

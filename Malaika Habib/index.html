@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/image-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/certification.css">
+    <link rel="stylesheet" href="style/testimonial.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <title>Malaika Habib</title>
+</head>
+
+<body>
+
+    <nav id="home">
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <img id="main-icon" style="width: 30px;" src="images/main.jpg" alt="Logo">
+            <h1>Malaika&nbsp;Habib</h1>
+        </div>
+
+        <ul data-aos="fade-right" id="main">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+
+        <i id="navIcon" class="bi bi-list" style="color: white; font-size: 24px; cursor: pointer;"></i>
+        <ul data-aos="fade-right" id="sec" style="display: none;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        console.log(window.innerWidth);
+
+        window.addEventListener('resize', manageNavbar);
+        window.addEventListener('load', manageNavbar);
+
+        function manageNavbar() {
+            if (window.innerWidth < 600) {
+                // Display mobile view
+                document.getElementById('navIcon').style.display = 'block';
+                document.getElementById('main').style.display = 'none';
+                document.getElementById('sec').style.display = 'none'; // Hide the mobile menu initially
+
+                // Add toggle functionality
+                let toggle = false;
+                document.getElementById('navIcon').addEventListener('click', function () {
+                    toggle = !toggle;
+                    document.getElementById('sec').style.display = toggle ? 'block' : 'none';
+                });
+            } else {
+                // Display desktop view
+                document.getElementById('navIcon').style.display = 'none';
+                document.getElementById('main').style.display = 'flex';
+                document.getElementById('sec').style.display = 'none';
+            }
+        }
+
+    </script>
+
+    <header data-aos="fade-right" id="header">
+
+        <div data-aos="fade-right" id="textBox">
+            <div data-aos="fade-right" id="textArea">
+                <h1>I'm</h1>
+                <h1 data-aos="fade-right" class="mainHeading">Malaika&nbsp;Habib</h1>
+                <h1 data-aos="fade-right" class="cursiveHeading">Professional Graphic Designer |Professional Social
+                    Media Designer| Designer at Fiverr|UI/UX designer</h1>
+            </div>
+            <div data-aos="fade-right" id="buttonArea">
+                <a href="#projects"> <button data-aos="fade-right" class="mainBtn">Projects</button></a>
+                <a href="#contact"> <button data-aos="fade-right" class="secBtn">Contact <i data-aos="fade-right"
+                            class="bi bi-chevron-right"></i></button></a>
+            </div>
+            <div data-aos="fade-right" id="IconBox">
+                <a href="https://www.instagram.com/mhgraphic16"> <i class="bi bi-instagram"></i></a>
+                <a href="https://www.fiverr.com/malaika_habib/"> <img src="images/fiverr.jpg" alt=""></a>
+                <a href="https://www.linkedin.com/in/malaika-habib-a295b6268/"> <i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/923161586121"> <i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.behance.net/malaikahabib1"><i class="bi bi-behance"></i></a>
+            </div>
+        </div>
+        <div data-aos="fade-right" id="imageBox">
+            <img data-aos="fade-right" src="images/main.jpg" alt='picture'>
+        </div>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>As an experienced Graphic Designer with over two years of proven expertise, I specialize in creating visually
+            captivating designs that effectively communicate brand identities and messages. My freelance work on
+            platforms like Fiverr has allowed me to hone my skills and build a diverse portfolio that showcases my
+            ability to deliver high-quality designs tailored to client needs. I am passionate about transforming ideas
+            into visually striking concepts that resonate with audiences.</p>
+        <p>
+            My proficiency in Canva, combined with my experience in designing banners, posters, logos, product mockups,
+            flyers, and social media posts, enables me to tackle a variety of projects with creativity and precision. I
+            take pride in my ability to understand client objectives and translate them into compelling visuals that not
+            only attract attention but also enhance brand recognition. Whether working on a single project or an
+            extensive campaign, I am committed to delivering exceptional results that elevate my clients' brands.</p>
+    </section>
+
+    <section id="certification">
+        <h1>My Certifications</h1>
+        <div>
+            <img src="images/certificate1.jpg" alt="">
+            <img src="images/certificate2.jpg" alt="">
+            <img src="images/certificate3.jpg" alt="">
+            <img src="images/certificate4.jpg" alt="">
+            <img src="images/certificate5.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="testimonial">
+
+        <h1>Testimonial</h1>
+
+        <div>
+            <div class="card">
+                <img src="images/client2.png" alt="">
+
+
+                <div class="infos">
+                    <p class="description">
+                        Malaika, I just wanted to express my gratitude for being such a fantastic collaborator! Your
+                        creativity, eye for detail, and design expertise are genuinely remarkable. You have an
+                        incredible ability to understand clients' needs and deliver beautiful outcomes every time. I
+                        also appreciate your professionalism, clear communication, and punctuality – working with you is
+                        truly effortless. I'm thrilled to have the opportunity to collaborate, and I wholeheartedly
+                        recommend you to anyone in search of an outstanding graphic designer.
+                    </p>
+                </div>
+
+                <div class="author">
+                    — Rafey Ali
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/client1.png" alt="">
+
+
+                <div class="infos">
+                    <p class="description">
+                        Malaika, I just wanted to say thanks for being amazing to work with! Your talent, attention to
+                        detail, and
+                        design skills are truly impressive. You always seem to know exactly what clients need and
+                        deliver stunning
+                        results. I also appreciate how professional, communicative, and timely you are it makes working
+                        with you a
+                        breeze. I'm so glad we get to collaborate and I highly recommend you to anyone looking for a
+                        top-notch graphic
+                        designer
+                    </p>
+                </div>
+
+                <div class="author">
+                    — Aamir Khan
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/client3.png" alt="">
+
+                
+                <div class="infos">
+                    <p class="description">
+                        Malaika, I just want to say thank you for being such a wonderful partner to work with! Your
+                        talent, meticulousness, and design expertise are exceptional. You always seem to have an
+                        intuitive grasp of what clients want and deliver impressive results. I also really value your
+                        professionalism, responsiveness, and reliability—it makes working with you so smooth. I'm
+                        grateful for our collaboration and highly recommend you to anyone seeking a top-tier graphic
+                        designer.
+                    </p>
+                </div>
+                
+                <div class="author">
+                    — Ayesha Mughal
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Projects">
+        <h1>My Work</h1>
+        <div>
+            <h2 class="mainHeading">My Creation of Logo</h2>
+        </div>
+        <div>
+            <img class="logo" src="images/logo(1).jpeg" alt="">
+            <img class="logo" src="images/logo(2).jpeg" alt="">
+            <img class="logo" src="images/logo(5).jpeg" alt="">
+            <img class="logo" src="images/logo(6).jpeg" alt="">
+            <img class="logo" src="images/logo(4).jpeg" alt="">
+            <img class="logo" src="images/logo(7).jpeg" alt="">
+            <img class="logo" src="images/logo(8).jpeg" alt="">
+            <img class="logo" src="images/logo(9).jpeg" alt="">
+            <img class="logo" src="images/logo(10).jpeg" alt="">
+            <img class="logo" src="images/logo(11).jpeg" alt="">
+        </div>
+
+        <div>
+            <h2 class="mainHeading">My Creation of Mobile UI</h2>
+        </div>
+        <div>
+            <img class="mobile-ui" src="images/mobile ui  (1).jpeg" alt="">
+            <img class="mobile-ui" src="images/mobile ui  (4).jpeg" alt="">
+            <img class="mobile-ui" src="images/mobile ui  (3).jpeg" alt="">
+            <img class="mobile-ui" src="images/mobile ui  (2).jpeg" alt="">
+            <img class="mobile-ui" src="images/mobile ui  (5).jpeg" alt="">
+            <img class="mobile-ui" src="images/mobile ui  (6).jpeg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="top">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+        <hr>
+        <p>Ready to elevate your brand with stunning designs? Let's collaborate! Reach out today to discuss your project
+            and bring your vision to life!</p>
+        <hr>
+        <div class="icons">
+            <a href="https://www.instagram.com/mhgraphic16"> <i class="bi bi-instagram"></i></a>
+            <a href="https://www.fiverr.com/malaika_habib/"> <img src="images/fiverr.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/malaika-habib-a295b6268/"> <i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/923161586121"> <i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.behance.net/malaikahabib1"><i class="bi bi-behance"></i></a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

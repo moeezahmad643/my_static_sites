@@ -1,0 +1,106 @@
+header {
+    background-color: #ebf9ff;
+
+    nav {
+        display: flex;
+        gap: 10px;
+        padding: 2vw;
+
+        align-items: center;
+        justify-content: space-evenly;
+
+        & h1 {
+            font-size: xx-large;
+        }
+
+        & ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            & li {
+                margin: 10px;
+                font-size: large;
+                color: black;
+                a{
+                        color: black;
+                        text-decoration: none;
+                }
+            }
+            & li:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    main {
+        height: 90%;
+        padding: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 500px;
+        }
+        & img {
+            width: 600px;
+            mix-blend-mode: multiply;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            & h1 {
+                color: #019bf5;
+            }
+            p {
+                letter-spacing: 1px;
+            }
+            & button {
+                margin: 20px;
+                padding: 5px 10px;
+                background-color: transparent;
+                border-radius: 100px;
+                color: #019bf5;
+                font-size: large;
+                width: min-content;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center ;
+        & img{
+                width: 100vw !important;
+        }
+        & div {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        padding: 1vw;
+        gap: 0;
+        flex-wrap: wrap;
+        padding: 0;
+        & ul {
+                gap: 1px;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+            & li {
+                font-size: small;
+                margin: 0px;
+            }
+        }
+    }
+}

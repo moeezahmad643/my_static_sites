@@ -1,0 +1,81 @@
+.expertise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vmax;
+  height: 100vh;
+
+  .text-area {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 55%;
+    .top-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .top-badge-text {
+        background-color: #1e1ee43a;
+        color: #220080;
+        border-radius: 30px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+      }
+      .top-badge-line {
+        background-color: #220080;
+        width: 100px;
+        border: 1px solid #220080;
+      }
+    }
+    h1 {
+      font-size: 3vmax;
+    }
+    p {
+      font-size: medium;
+      line-height: 30px !important;
+    }
+    button {
+      border: 1px solid gray;
+      color: black;
+    }
+    button:hover {
+      background-color: gray;
+      color: white;
+    }
+  }
+
+  .image-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .expertise {
+    flex-wrap: wrap-reverse;
+    padding: 0 !important;
+    height: auto;
+
+    .text-area {
+      width: 70%;
+      height: auto;
+      h1 {
+        padding: 20px 0;
+      }
+      p{
+        width: 80vw !important;
+      }
+      .top-badge {
+        margin: 10px 0;
+      }
+    }
+  }
+}

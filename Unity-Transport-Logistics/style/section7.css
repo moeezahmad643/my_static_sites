@@ -1,0 +1,35 @@
+.section7 {
+  padding: 5vw;
+
+  .top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .bottom {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    position: relative; /* Required for absolute positioning of animation */
+    animation: moving 20s linear infinite; /* Adjust duration for a smoother scroll */
+  }
+
+  img {
+    height: 10vw;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent images from shrinking */
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
