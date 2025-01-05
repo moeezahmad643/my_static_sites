@@ -1,0 +1,48 @@
+#about {
+    display: flex;
+    padding: 5vw;
+    align-items: center;
+    .mainHeading {
+        font-size: 60px;
+    }
+    
+
+    & img {
+        border-radius: 15px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #aboutSection {
+        padding: 5vw;
+    }
+
+    p {
+        font-size: 2vw;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        flex-wrap: wrap;
+        section {
+            width: 100%;
+        }
+        & img {
+            border-radius: 15px;
+            padding: 10px;
+            width: 100%;
+            display: none;
+        }
+
+        #aboutSection {
+            width: 100%;
+        }
+
+        p {
+            font-size: medium;
+            padding: 10px;
+        }
+    }
+}

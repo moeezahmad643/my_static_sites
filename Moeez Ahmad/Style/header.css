@@ -1,0 +1,126 @@
+#header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3vw;
+  align-items: center;
+
+  #textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+ 
+    #textArea {
+        width: min-content;
+      display: flex;
+      flex-direction: column;
+      gap: 0px !important;
+      margin: 0;
+      padding: 0;
+      align-items: start;
+
+      .mini-text {
+        margin: 0;
+        padding: 0;
+      }
+      .mainHeading {
+        margin: 0;
+        padding: 0;
+        font-size: 6vw;
+        line-height: 0.9;
+      }
+      .cursiveHeading {
+        font-size: 1.5vw;
+        padding: 15px 0;
+        line-height: 1.5;
+      }
+    }
+
+    #buttonArea {
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+      align-items: center;
+      & button {
+        font-weight: bold;
+      }
+      
+    }
+    #IconBox {
+      display: flex;
+      align-items: center;
+      gap: 5vw;
+      padding: 3vw 0;
+      overflow: hidden;
+      & img {
+        width: 4vmax;
+        padding: 5px;
+        transition: all 0.2s;   
+      }
+      & img:hover {
+        width: 4vmax;
+        scale: 1.1;
+      }
+
+    }
+  }
+  #imageBox {
+    & img {
+      width: 30vmax !important;
+      border-radius: 50%;
+      box-shadow: 0 0 15px 1px #27a1fc;
+      transition: box-shadow 0.5s;
+    }
+    & img:hover {
+      border-radius: 50%;
+      box-shadow: 0 0 15px 10px #27a1fc;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    flex-wrap: wrap-reverse;
+    align-items: center !important;
+    justify-content: center;
+    #textArea {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0 !important;
+      .mini-text {
+        font-size: 7vw !important;
+        margin: 0;
+        padding: 0;
+      }
+      .mainHeading {
+        font-size: 14vw !important;
+      }
+      .cursiveHeading {
+        font-size: 5vw !important;
+        padding: 5px 0 !important;
+        width: 100% !important;
+      }
+    }
+    #imageBox {
+      width: 100%;
+      img {
+        width: 90%;
+      }
+    }
+    & div {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    button {
+      font-size: small;
+    }
+
+    #IconBox {
+      padding: 50px 0 !important;
+      justify-content: space-evenly;
+      width: 100%;
+      gap: 0 !important;
+    }
+  }
+}

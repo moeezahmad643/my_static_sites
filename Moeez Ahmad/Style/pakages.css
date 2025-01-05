@@ -1,0 +1,53 @@
+.pakages {
+  display: flex;
+  flex-direction: column;
+  & header {
+    display: flex;
+    padding: 0 50px;
+    padding: 5vw;
+    justify-content: space-between;
+    align-items: center;
+
+    .mainHeading {
+      font-size: 5vmax  ;
+    }
+  }
+
+  & section {
+    display: flex;
+    padding: 1vw;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: 1px solid #261b41ed;
+      border-radius: 10px;
+      background-color: #2c1f4a3a;
+      padding: 25px;
+      min-width: 270px;
+      width: 25%;
+      h1 {
+        font-size: 3.5vmax;
+        text-align: center;
+    }
+    & ul {
+        margin: 15px;
+        & li {
+            margin: 15px;
+            list-style: disc !important;
+        }
+    }
+    h3{
+          font-size: 2vw;
+        text-align: center;
+      }
+      button {
+        background-color: blue;
+      }
+    }
+  }
+}
