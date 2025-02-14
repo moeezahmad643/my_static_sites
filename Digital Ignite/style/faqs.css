@@ -1,0 +1,72 @@
+.faqs {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+  padding: 8vw;
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    h3 {
+      color: var(--blue);
+    }
+    button {
+      margin-top: 10px;
+    }
+   
+
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding:  18px;
+      background-color: var(--background);
+      color: var(--gray);
+      display: none;
+      overflow: hidden;
+      transition: all 0.5s ease-out !important;
+
+    }
+    .accordion:after {
+      content: "\02795"; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+  }
+
+  .img-box {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    img {
+      width: 80%;
+    }
+  }
+}

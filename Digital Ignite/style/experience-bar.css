@@ -1,0 +1,15 @@
+.experience-bar{
+    display: flex;
+    background-color: var(--blue-dark);
+    color: var(--background);
+
+    justify-content: space-evenly;
+    padding: 40px;
+
+    div{
+        h5{
+            color: var(--background);
+        }
+        text-align: center;
+    }
+}

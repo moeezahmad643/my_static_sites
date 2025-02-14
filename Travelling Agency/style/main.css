@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 
+    Main Color: #02be61
+    Primary Color: #0f4e2f
+    Secondary Color:  #fff
+*/
+
+.btn {
+  background-color: #02be61;
+  border: 1px solid #02be61;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  &:hover {
+    color: #02be61;
+    background-color: white;
+  }
+  &:active {
+    transform: scale(0.9);
+    color: #02be61;
+    background-color: white;
+  }
+}
+
+
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+section{
+    padding: 5vw;
+}

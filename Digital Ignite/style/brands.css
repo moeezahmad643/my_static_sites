@@ -1,0 +1,28 @@
+.brands {
+  background-color: #BDDDFB !important;
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue-dark);
+  color: var(--background);
+
+  justify-content: space-evenly;
+  padding: 40px;
+
+  div {
+    h5 {
+      color: var(--background);
+    }
+    text-align: center;
+  }
+  main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    img{
+        width: 12vw;
+        object-fit: contain;
+    }
+  }
+}

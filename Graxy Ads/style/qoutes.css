@@ -1,0 +1,43 @@
+.qoutes {
+  display: flex;
+  justify-content: center;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    -webkit-box-shadow: 1.5px 1px 32px 4px #282828;
+    -moz-box-shadow: 1.5px 1px 32px 4px #282828;
+    box-shadow: 1.5px 1px 32px 4px #282828;
+    transition: all 0.5s;
+
+    .author {
+      background-color: black;
+      color: #c7adff;
+      border-radius: 10px;
+      border: 1px solid #ffecda;
+      border: 1px solid #c7adff;
+      margin-top: 10px;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+    q {
+      font-size: 3vmax;
+      font-style: italic;
+      font-weight: 200;
+      width: 60vw;
+      min-width: 300px;
+      text-align: center;
+    }
+  }
+  span:hover {
+    -webkit-box-shadow: 1.5px 1px 52px 4px #86838379;
+    -moz-box-shadow: 1.5px 1px 52px 4px #8a89897a;
+    box-shadow: 1.5px 1px 52px 4px #8483837b;
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --blue: #0038AA;
+  --blue-dark: #034582;
+  --background: #FDF7F7;
+  --white: #FDF7F7;
+  --gray:#878787;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background);
+}

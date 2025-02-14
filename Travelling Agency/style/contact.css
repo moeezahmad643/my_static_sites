@@ -1,0 +1,41 @@
+#contact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: black;
+    color: white;
+    padding: 3vw 15vw;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 200px;
+    }
+    span{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      ul{
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          a{
+              text-decoration: none;
+              list-style: none;
+              color: white;
+          }
+      }
+      .icon-list{
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+  
+          svg{
+              color: white;
+          }
+      }
+    }
+  }
+  

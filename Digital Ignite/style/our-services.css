@@ -1,0 +1,33 @@
+.our-services {
+  .top {
+    text-align: center;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3vw;
+    gap: 35px;
+    .card {
+      background-color: #ffffff;
+      box-shadow: 0px 5px 5px 1px #e1dfdd;
+      width: 28%;
+      padding:30px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      border-radius: 5px;
+
+      img {
+        width: 50%;
+        height: 150px;
+      }
+
+      p {
+        color: var(--gray);
+      }
+    }
+  }
+}

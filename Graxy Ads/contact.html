@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Ads</title>
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/subscribe.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <span class="left">
+            <img src="images/logo.png" alt="">
+            <h3>GalaxyAds</h3>
+        </span>
+
+        <span class="middle">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="services.html">
+                <li>Services</li>
+            </a>
+        </span>
+
+        <span class="right">
+            <button onclick="window.location.href = 'contact.html'">Contact Us</button>
+        </span>
+
+        <span class="secondery-nav">
+            <i class="bi bi-list"></i>
+        </span>
+    </nav>
+
+    <header>
+        <div class="ring"></div>
+        <div>
+            <h1>Contact Us Now</h1>
+
+            <span>
+                <button onclick="window.location.href = 'services.html'" class="primary">Services</button>
+                <button onclick="window.location.href = 'about.html'" class="secondery">About Us</button>
+            </span>
+        </div>
+    </header>
+
+    <section id="contact">
+        <form action="">
+            <h1>Contact Us</h1>
+            <input type="text" name="Name" placeholder="Your Name"  required>
+            <input type="text" name="Email" placeholder="Your Email"  required>
+            <textarea name="Description" rows="10" placeholder="Description"  required></textarea>
+            <button>Submit</button>
+        </form>
+    </section>
+
+   <footer>
+        <span class="left">
+            <img src="images/logo.png" alt="">
+            <h3>Galaxy Ads</h3>
+        </span>
+
+        <span class="middle">
+            <li>Email: contact@galaxyads.io</li>
+            <li><a
+                href="https://api.whatsapp.com/send?phone=17634850587&text=Hi,%20I%20get%20your%20Contact%20no.%20from%20your%20website.%20I%20want%20to%20ask%20you%20something.">
+                  Phone: +1 763 485 0587
+            </a></li>
+            <li>Atherton, USA</li>
+        </span>
+
+        <span class="right">
+            <a>
+                <li>
+                    Markeing Agency
+                </li>
+            </a>
+        </span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script src="animation/header.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/faqs.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

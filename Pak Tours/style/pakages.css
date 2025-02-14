@@ -1,0 +1,51 @@
+#pakages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  > span {
+    h1 {
+        font-size: 2.5rem;
+
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      img {
+        min-width: 250px;
+        width: 400px;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        transition: all 0.2s;
+        border-radius: 10px;
+        &:hover {
+          transform: scale(1.02);
+          filter: brightness(0.5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #pakages {
+    > span h1{
+        font-size: 2.5rem;
+    }
+    div {
+      img {
+        width: 90% !important;
+      }
+    }
+  }
+}

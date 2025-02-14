@@ -1,0 +1,49 @@
+#achivements {
+  padding: 5vw;
+
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    img {
+      align-self: center;
+      width: 400px;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      span {
+        width: 30%;
+
+        h1{
+            font-size: 3rem;
+        }
+        h1::after{
+            content: "+";
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #achivements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    div {
+      width: 90%;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
