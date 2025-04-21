@@ -1,0 +1,45 @@
+.qoutes {
+  display: flex;
+  justify-content: center;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5vw 1vw;
+    border: 2px solid rgb(32, 32, 32);
+    background-color: #BDDDFB;
+    border-radius: 10px;
+    -webkit-box-shadow: 1.5px 1.5px 5px 0.1px #282828;
+    -moz-box-shadow: 1.5px 1.5px 5px 0.1px #282828;
+    box-shadow: 1.5px 1.5px 5px 0.1px #282828;
+    transition: all 0.5s;
+
+    .author {
+      color: #5379F6;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 3vmax;
+      font-style: italic;
+      font-weight: 200;
+      width: 60vw;
+      min-width: 300px;
+      text-align: center;
+    }
+    p{
+      color: black !important;
+    }
+    img{
+      width: 15vw;
+      
+    }
+  }
+  span:hover {
+    -webkit-box-shadow: -1.5px -1.5px 5px 0.1px #282828;
+    -moz-box-shadow: -1.5px -1.5px 5px 0.1px #282828;
+    box-shadow: -1.5px -1.5px 5px 0.1px #282828;
+  }
+}

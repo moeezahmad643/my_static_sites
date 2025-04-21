@@ -1,0 +1,69 @@
+.client-says {
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers child elements horizontally */
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box; /* Include padding in width calculations */
+
+  overflow-x: hidden;
+  > .main {
+    position: relative;
+    margin: 0 auto; /* Primary centering mechanism */
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 60px 0;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    width: 100% !important;
+    animation: scroll-top-right 40s linear infinite;
+
+    div {
+      background-image: url("../images/label.png");
+      width: 20vw;
+      color: black;
+      padding: 20px;
+      background-size: cover;
+      background-position: top;
+      border-radius: 10px;
+      padding-bottom: 50px;
+      min-width: 280px;
+      
+      
+      span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+          border-radius: 5px;
+          width: 30px;
+        }
+      }
+      > p {
+        font-size: 12px;
+        padding: 10px 0;
+        line-height: 1.4;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+@keyframes scroll-top-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(90%);
+  } /* Half of total width */
+  100% {
+    transform: translateX(0);
+  }
+}

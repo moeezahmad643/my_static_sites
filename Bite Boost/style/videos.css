@@ -1,0 +1,75 @@
+.videos {
+  width: 100% !important;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers child elements horizontally */
+  z-index: 10;
+  box-sizing: border-box; /* Include padding in width calculations */
+
+  .bi {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 58%;
+    z-index: 100;
+    display: none;
+  }
+  .bi-arrow-left-circle {
+    left: 30px;
+  }
+  .bi-arrow-right-circle {
+    right: 30px;
+  }
+
+  > .main {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto; /* Primary centering mechanism */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 60px 0;
+    justify-content: start;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    width: 100% !important;
+
+    iframe {
+      border-radius: 10px;
+      position: relative;
+      z-index: -1;
+      width: 18vw;
+      min-width: 250px;
+      aspect-ratio: 9/16 !important;
+    }
+  }
+}
+
+.videos .main {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.videos .main::-webkit-scrollbar {
+  display: none;
+}
+
+.videos .main iframe {
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .videos .bi {
+    display: none !important;
+  }
+}
