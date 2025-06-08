@@ -1,0 +1,41 @@
+#results {
+  h1 {
+    font-size: 5vmax;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3c60fc;
+  }
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 2vw 0;
+    padding: 0px 4vw;
+    align-items: center;
+    img {
+      border-radius: 2%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+      object-fit: contain;
+      filter: sharpen(5);
+      min-width: 120px;
+    }
+  }
+  .part1 {
+    img {
+      width: 27%;
+    }
+  }
+
+  .part2 {
+    img {
+      width: 20%;
+    }
+  }
+
+  .part3 {
+    img {
+      width: 30%;
+    }
+  }
+}

@@ -40,6 +40,7 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        color: white;
 
         img {
           border-radius: 5px;
@@ -51,6 +52,7 @@
         padding: 10px 0;
         line-height: 1.4;
         letter-spacing: 1px;
+        color: white;
       }
     }
   }

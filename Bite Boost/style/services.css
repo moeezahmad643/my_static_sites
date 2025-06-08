@@ -12,7 +12,7 @@
     justify-content: center;
 
     div {
-      max-width: 18vw;
+      max-width: 19vw;
       min-width: 250px;
       display: flex;
       flex-direction: column;
@@ -24,23 +24,27 @@
       border-radius: 15px;
       padding: 30px;
 
-      img {
-        width: 70%;
+      i {
+        font-size: 80px;
         padding: 20px;
+        color: #ff6100;
         transition: all 0.3s ease-in-out;
       }
       h3 {
         font-weight: 1000;
+        color: #ff6100;
+        font-size: medium;
       }
       p {
         color: #9f9f9f;
         text-align: center;
         width: 70%;
+        font-size: small;
       }
     }
 
     div:hover {
-      img {
+      i {
         transform: scale(1.1) rotate(5deg);
       }
     }

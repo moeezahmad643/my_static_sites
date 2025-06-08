@@ -1,0 +1,149 @@
+nav {
+  z-index: 1000;
+  border-radius: 100px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between; 
+  color: white;
+  padding: 10px 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: min-content;
+  max-height: 57px;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(78, 78, 78, 0.15); /* Yellow shadow */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(230, 255, 222, 0.1); /* Yellow border */
+
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 40%; /* Use percentage for better responsiveness */
+  max-width: 1200px; /* Optional: set a max-width for larger screens */
+  transform: none;
+
+  
+  img {
+    width: 40px;
+    padding: px 0;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+
+      li {
+        cursor: pointer;
+        transition: color 0.3s;
+        text-wrap: nowrap;
+      }
+
+      li:hover {
+        color: #0a9264;
+      }
+    }
+  }
+
+  button {
+    text-wrap: nowrap;
+    background-color: transparent;
+    color: #bfbfbf; /* Yellow text */
+    font-weight: 400;
+    border: 1px solid rgba(180, 180, 180); /* Yellow border */
+    padding: 8px 15px;
+    border-radius: 100px;
+    font-size: small;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 187, 1, 0.1); /* Light yellow bg */
+    }
+
+    &:active {
+      background-color: rgba(255, 187, 1, 0.2); /* Darker yellow */
+      transform: scale(0.98);
+    }
+  }
+
+  .bi-list {
+    color: #cdcdcd; /* Yellow color */
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1000px) {
+  nav {
+    width: 95;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 0;
+
+    ul {
+      position: fixed;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      align-items: start;
+      padding: 20px 0;
+      border-radius: 20px;
+      border: 1px solid rgba(169, 169, 169, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(193, 193, 193, 0.25);
+      display: none;
+      background: rgba(255, 255, 255, 0.9);
+
+      li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+      }
+    }
+
+    #nav-buttons {
+      display: none;
+    }
+
+    .bi-list {
+      display: block;
+    }
+
+    /* Active state when menu is open */
+    &.active {
+      ul {
+        display: flex;
+        animation: fadeIn 0.3s ease;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}

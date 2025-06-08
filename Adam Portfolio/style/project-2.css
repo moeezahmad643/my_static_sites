@@ -1,0 +1,60 @@
+#project-2 {
+  display: flex;
+  padding: 6vw 0;
+  flex-direction: column;
+
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    img {
+      width: 20%;
+      min-width: 140px;
+      object-fit: cover;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3vw;
+    h1 {
+      font-size: 5vmax;
+      text-align: center;
+      text-transform: uppercase;
+      color: #3c60fc;
+    }
+    p {
+      width: 75%;
+      line-height: 1.2;
+      min-width: 300px;
+    }
+  }
+  .work {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    img {
+      width: 17%;
+      border-radius: 2%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+    }
+  }
+  .work-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0vw;
+    margin: 2vw 0;
+    padding: 0px 4vw;
+    img {
+      width: 16%;
+      border-radius: 2%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+    }
+  }
+}

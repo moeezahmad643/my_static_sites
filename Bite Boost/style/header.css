@@ -1,5 +1,5 @@
 header {
-  background-color: black;
+  background-color: white;
   width: 100%;
   /* overflow-x: hidden; */
   display: flex;
@@ -38,7 +38,7 @@ header main {
   }
   
   h1 {
-    color: white;
+    color: black;
     font-size: 3.5vmax;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
@@ -60,7 +60,7 @@ header main {
     }
   }
   p {
-    color: gainsboro;
+    color: rgb(57, 57, 57);
     font-family: poppins, sans-serif;
     letter-spacing: 1px;
     line-height: 1.4;
@@ -155,6 +155,7 @@ header main {
   top: -150px !important;
   left: 0vw;
   border: 1px solid red;
+  opacity: 0.5;
 }
 
 @keyframes pulse {

@@ -1,0 +1,51 @@
+#more-designs {
+  h1 {
+    font-size: 5vmax;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3c60fc;
+  }
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2vw 0;
+    padding: 0px 4vw;
+    align-items: center;
+    img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+      object-fit: contain;
+      filter: sharpen(5);
+    }
+  }
+  .part1 {
+    gap: 20px;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .part2 {
+    gap: 0;
+    img {
+      width: 90%;
+    }
+  }
+
+  .part3 {
+    gap: 0;
+    justify-content: center;
+    img {
+      width: 30%;
+    }
+  }
+
+  .part4 {
+    gap: 0;
+    justify-content: center;
+    img {
+      width: 23%;
+    }
+  }
+}

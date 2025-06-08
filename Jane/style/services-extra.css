@@ -1,0 +1,37 @@
+/* 
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      justify-content: center;
+    }
+    .service-card {
+      background: #000000;
+      color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(163, 163, 163, 0.05);
+      max-width: 300px;
+      flex: 1 1 300px;
+      position: relative;
+      border-left: 4px solid #e16000;
+    }
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .service-desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .plus-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.2rem;
+      color: #e16000;
+      font-weight: bold;
+    } */

@@ -1,0 +1,62 @@
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 20px;
+  div {
+    width: 20vw;
+    min-width: 250px;
+    height: 500px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px rgba(255, 115, 0, 0.537);
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    p {
+      font-size: small;
+    }
+  }
+  div:hover {
+    box-shadow: -5px -5px 10px rgba(255, 115, 0, 0.537);
+  }
+
+  .box-1 {
+    background: url("../images/2.png") no-repeat bottom center;
+    background-size: cover;
+  }
+  .box-2 {
+    background: url("../images/3.png") no-repeat bottom center;
+    background-size: cover;
+  }
+  .box-3 {
+    background: url("../images/4.png") no-repeat bottom center;
+    background-size: cover;
+  }
+  .box-4 {
+    background: url("../images/5.png") no-repeat bottom center;
+    background-size: cover;
+  }
+
+  .box-1:hover {
+    background: url("../images/2.png") no-repeat bottom 4px center;
+    background-size: cover;
+  }
+  .box-2:hover {
+    background: url("../images/3.png") no-repeat bottom 4px center;
+    background-size: cover;
+  }
+  .box-3:hover {
+    background: url("../images/4.png") no-repeat bottom 4px center;
+    background-size: cover;
+  }
+  .box-4:hover {
+    background: url("../images/5.png") no-repeat bottom 4px center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white; 
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 10px;
+
+  h1 {
+    font-size: 3vmax;
+    text-align: center;
+    font-weight: 1000;
+    color: black;
+  }
+  p {
+    color: #9f9f9f;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 70vw;
+  }
+}
