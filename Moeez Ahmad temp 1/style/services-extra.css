@@ -1,0 +1,48 @@
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+
+  .service-card {
+    background: #1d1d1d;
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px var(--lowblue);
+    max-width: 290px;
+    flex: 1 1 300px;
+    position: relative;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    cursor:unset;  
+    
+    
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .service-desc {
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .bi {
+      font-size: 30px;
+      padding: 10px 0;
+      color: var(--blue);
+    }
+    
+    &:hover {
+      box-shadow: 0 6px 12px var(--lowblue);
+      transform: translateY(-5px);
+      background-color: var(--blue);
+      color: white;
+      .bi{
+        color: #ffffff;
+      }
+    }
+  }
+  
+}

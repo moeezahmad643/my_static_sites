@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeez Ahmad</title>
+
+
+
+    <!-- css files -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Moeez.</h1>
+        <i class="bi bi-three-dots-vertical"></i>
+    </nav>
+    <header>
+        <h1 class="rise-text">Dive into the Reality of Development</h1>
+    </header>
+
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer with a keen interest in creating dynamic and responsive web
+                applications.
+                My journey in web development has been fueled by a desire to build user-friendly interfaces and
+                efficient back-end systems.
+            </p>
+            <br>
+            <p>
+                With a strong foundation in HTML, CSS, and JavaScript, I have honed my skills in front-end development.
+                I am also proficient in back-end technologies such as Node.js and Express, allowing me to create
+                full-stack applications.
+            </p>
+            <br>
+            <br>
+            <a href="#projects">View Projects</a>
+        </div>
+        <img src="admin.jpg" alt="">
+    </section>
+
+
+    <section id="testimonials">
+        <div class="testimonial testimonial-even">
+            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
+            <span>- Client A</span>
+        </div>
+        <div class="testimonial testimonial-odd">
+            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
+            <span>- Client B</span>
+        </div>
+        <div class="testimonial testimonial-even">
+            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
+            <span>- Client A</span>
+        </div>
+        <div class="testimonial testimonial-odd">
+            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
+            <span>- Client B</span>
+        </div>
+        <div class="testimonial testimonial-even">
+            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
+            <span>- Client A</span>
+        </div>
+        <div class="testimonial testimonial-odd">
+            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
+            <span>- Client B</span>
+        </div>
+        <div class="testimonial testimonial-even">
+            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
+            <span>- Client A</span>
+        </div>
+        <div class="testimonial testimonial-odd">
+            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
+            <span>- Client B</span>
+        </div>
+
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'
+        integrity='sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=='
+        crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js'
+        integrity='sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=='
+        crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+
+    <script>
+
+        gsap.to("body", {
+            animation: "ease-in-out",
+            duration: 1,
+        })
+
+
+        function animateHeader() {
+
+            let text = document.querySelector('header h1');
+
+            let newText = text.textContent.split('')
+            text.innerHTML = '';
+
+            for (let index = 0; index < newText.length; index++) {
+
+                let span = document.createElement('span');
+                span.innerHTML = newText[index];
+                text.appendChild(span);
+            }
+
+
+            gsap.from('header h1 span', {
+                y: 1000,
+                duration: 1,
+                opacity: 0,
+                stagger: 0.04,
+                ease: 'power2.out',
+                onComplete: () => {
+                    gsap.to('header', {
+                        duration: 1,
+                        y: 0,
+                        opacity: 1
+                    });
+                }
+            });
+        }
+        animateHeader()
+
+
+        function animateAbout() {
+            gsap.from('#about div', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#about',
+                    start: 'top center',
+                    end: '65% center',
+                    scrub: 1,
+                }
+            });
+
+            gsap.from('#about img', {
+                x: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#about',
+                    start: 'top center',
+                    end: '65% center',
+                    scrub: 1,
+                    markers: true
+                }
+            });
+        }
+        animateAbout()
+
+
+    </script>
+</body>
+
+</html>

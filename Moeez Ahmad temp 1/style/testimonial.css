@@ -1,0 +1,80 @@
+.testimonial {
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+
+  .circle {
+  height: 60vw;
+  width: 60vw;
+  border-radius: 50%;
+  background-color: var(--lowblue);
+  position: absolute;
+  top: -500px;
+  left: 80vw;
+  z-index: -10;
+  filter: blur(500px);
+}
+
+
+  > div {
+    border: 1px solid #ffffff;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    width: 30vw;
+    min-width: 300px;
+    box-shadow: 4px 4px 0 var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        filter: saturate(0);
+      }
+
+      span {
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+
+        p {
+          margin: 0;
+          font-size: 13px;
+          color: var(--blue);
+        }
+      }
+    }
+  }
+
+   >div {
+    box-shadow: 5px 5px 10px var(--blue);
+    transition: all 0.5s;
+  }
+  >div:hover {
+    box-shadow: -5px -5px 10px var(--lowblue);
+  }
+}
