@@ -7,10 +7,332 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moeez Ahmad</title>
 
-
-
     <!-- css files -->
-    <link rel="stylesheet" href="style/main.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1c1d21;
+            color: white;
+            height: 100lvh;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 90vh;
+            padding: 40px 20px;
+            display: grid;
+            place-items: center;
+
+            h1 {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 500;
+                font-size: clamp(2rem, 15vmax, 15vmax);
+                line-height: 0.8;
+            }
+
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                h1 {
+                    font-size: 12vmax;
+                }
+            }
+        }
+
+        nav {
+            padding: 10px 20px;
+            display: flex;
+            height: 10lvh;
+            flex-direction: row;
+            justify-content: space-between;
+
+            align-items: center;
+
+            h1 {
+                font-family: "Roboto", sans-serif;
+            }
+
+            .bi {
+                color: white;
+                font-size: 20px;
+                padding: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                position: relative;
+
+                &:hover {
+                    background-color: gray;
+                }
+            }
+        }
+
+        #about {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            div {
+                width: 45%;
+
+                h2 {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: large;
+                    font-family: "DM Sans", sans-serif;
+                }
+
+                a {
+                    border: 1px solid white;
+                    padding: 10px 20px;
+                    color: white;
+                    font-family: "roboto", sans-serif;
+                    text-decoration: none;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        left: 5px;
+                        top: -5px;
+                        box-shadow: -5px 5px 0px white;
+                        background-color: rgb(27, 25, 25);
+                    }
+                }
+            }
+
+            img {
+                width: 25%;
+                filter: saturate(0.1);
+                aspect-ratio: 3/4;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+
+                div {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                img {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        #testimonials {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .testimonial {
+                border: 2px solid white;
+                width: 16%;
+                padding: 20px;
+                border-radius: 6px;
+                min-width: 200px;
+                top: 0;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+
+                p {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                span {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 15px;
+                    font-style: italic;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .testimonial:hover {
+                top: -10px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .testimonial-even {
+                transform: rotate(-5deg);
+            }
+
+            .testimonial-odd {
+                transform: rotate(5deg);
+            }
+        }
+
+
+        #workWith {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 40px;
+            flex-wrap: wrap;
+
+            div {
+                text-align: center;
+
+                h3 {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                }
+
+                h3:after {
+                    content: " +";
+                }
+
+                p {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+        #project1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+            padding: 40px;
+
+            div {
+                width: 45%;
+
+                h1 {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 50px;
+                    margin-bottom: 20px;
+
+                    line-height: 1;
+                }
+
+                p {
+                    font-size: large;
+                    font-family: "DM Sans", sans-serif;
+                }
+
+                @media screen and (max-width: 600px) {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            img {
+                width: 45%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+
+                div {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                img {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        #project2 {
+            flex-direction: row-reverse;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+            padding: 40px;
+
+            div {
+                width: 45%;
+
+                h1 {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 50px;
+                    line-height: 1;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: large;
+                    font-family: "DM Sans", sans-serif;
+                }
+
+                @media screen and (max-width: 600px) {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            img {
+                width: 45%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+
+                div {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                img {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -18,6 +340,7 @@
         <h1>Moeez.</h1>
         <i class="bi bi-three-dots-vertical"></i>
     </nav>
+
     <header>
         <h1 class="rise-text">Dive into the Reality of Development</h1>
     </header>
@@ -44,7 +367,6 @@
         <img src="admin.jpg" alt="">
     </section>
 
-
     <section id="testimonials">
         <div class="testimonial testimonial-even">
             <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
@@ -70,18 +392,82 @@
             <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
             <span>- Client B</span>
         </div>
-        <div class="testimonial testimonial-even">
-            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
-            <span>- Client A</span>
-        </div>
-        <div class="testimonial testimonial-odd">
-            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
-            <span>- Client B</span>
-        </div>
-
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br>
+
+    <section id="workWith">
+        <div>
+            <h3>
+                100
+            </h3>
+            <p>
+                Projects Completed
+            </p>
+        </div>
+        <div>
+            <h3>
+                50
+            </h3>
+            <p>
+                Happy Clients
+            </p>
+        </div>
+        <div>
+            <h3>
+                30
+            </h3>
+            <p>
+                Months of Experience
+            </p>
+        </div>
+        <div>
+            <h3>
+                10
+            </h3>
+            <p>
+                FrameWorks Used
+            </p>
+    </section>
+
+
+    <section id="project1">
+        <div>
+            <h1>Jane Kisnika</h1>
+            <p>
+                I create stunning and functional websites that not only look great but also provide an excellent user
+                experience. My projects are designed to be responsive, ensuring they look and perform well on all
+                devices.
+                <br>
+                <br>
+                I focus on clean code and best practices to ensure maintainability and scalability.
+            </p>
+        </div>
+        <img src="jame.png" alt="">
+    </section>
+
+    <section id="project2">
+        <div>
+            <h1>Adam Peng</h1>
+            <p>
+                I specialize in building robust back-end systems that power web applications. My expertise in Node.js
+                and
+                Express allows me to create efficient APIs and server-side logic.
+                <br>
+                <br>
+                I prioritize security and performance in all my projects, ensuring a seamless experience for users.
+            </p>
+        </div>
+        <img src="adam.png" alt="">
+    </section>
+
+
+
+
+
+    <center>
+        <h1>To be Continue After Eid</h1>
+    </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'
@@ -92,12 +478,6 @@
         crossorigin='anonymous' referrerpolicy='no-referrer'></script>
 
     <script>
-
-        gsap.to("body", {
-            animation: "ease-in-out",
-            duration: 1,
-        })
-
 
         function animateHeader() {
 
@@ -151,18 +531,137 @@
                 duration: 1,
                 opacity: 0,
                 ease: 'power2.out',
+                rotation: 20,
                 scrollTrigger: {
                     trigger: '#about',
                     start: 'top center',
                     end: '65% center',
                     scrub: 1,
-                    markers: true
                 }
             });
         }
         animateAbout()
 
+        function animateTestimonials() {
+            // gsap.from('.testimonial', {
+            //     y: 100,
+            //     opacity: 0,
+            //     ease: 'power2.out',
+            //     stagger: 0.2,
+            //     scrollTrigger: {
+            //         trigger: '#testimonials',
+            //         start: '10% 50%',
+            //         end: '50% 55%',
+            //         scrub:true,
+            //         markers: true,
+            //     }
+            // });
 
+            gsap.fromTo('.testimonial',
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    ease: 'power2.out',
+                    stagger: 5,
+                    scrollTrigger: {
+                        trigger: '#testimonials',
+                        start: '10% 50%',
+                        end: '50% 55%',
+                        scrub: true,
+                    }
+                }
+            );
+        }
+        animateTestimonials()
+
+        function animateWorkWith() {
+            gsap.from('#workWith div', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                stagger: 0.1,
+                scrollTrigger: {
+                    trigger: '#workWith',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+
+            gsap.from("#workWith div h3", {
+                innerText: 0,
+                duration: 2,
+                snap: {
+                    innerText: 1
+                },
+                scrollTrigger: {
+                    trigger: '#workWith',
+                    start: '10% center',
+                    end: '50% center',
+                }
+            });
+        }
+        animateWorkWith()
+
+        function animateProject1() {
+            gsap.from('#project1 div', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#project1',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+
+            gsap.from('#project1 img', {
+                x: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#project1',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+        }
+        animateProject1()
+
+        function animateProject2() {
+            gsap.from('#project2 div', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#project2',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+
+            gsap.from('#project2 img', {
+                x: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#project2',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+        }
+        animateProject2() 
     </script>
 </body>
 
