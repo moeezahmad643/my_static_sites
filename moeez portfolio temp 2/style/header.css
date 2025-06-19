@@ -1,0 +1,25 @@
+header {
+            height: 90vh;
+            padding: 40px 20px;
+            display: grid;
+            place-items: center;
+
+            h1 {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 500;
+                font-size: clamp(2rem, 15vmax, 15vmax);
+                line-height: 0.8;
+            }
+
+            @media (max-width: 700px) {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                h1 {
+                    font-size: 12vmax;
+                }
+            }
+        }

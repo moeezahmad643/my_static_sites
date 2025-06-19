@@ -1,0 +1,105 @@
+
+        .container {
+            margin: auto;
+            padding: 60px;
+
+            h1 {
+                font-size: 36px;
+                font-family: dm-sans, sans-serif;
+            }
+
+            .contact-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: space-between;
+                gap: 40px;
+                margin-bottom: 50px;
+            }
+
+            .form-box,
+            .info-box {
+                flex: 1;
+                min-width: 300px;
+                font-family: "DM Sans", sans-serif;
+
+                span {
+                    display: flex;
+                    gap: 15px;
+
+                    a {
+                        position: relative;
+                        top: 0;
+                        color: white;
+                        font-size: 25px;
+                        text-decoration: none;
+
+                        .bi {
+                            margin: 0px 20px !important;
+                        }
+
+                        &:hover {
+                            top: -5px;
+                            color: rgb(230, 228, 228);
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+            }
+
+            .form-box input,
+            .form-box textarea,
+            .form-box select {
+                width: 100%;
+                padding: 12px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ff0000;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                background-color: transparent;
+                color: white;
+
+                option{
+                    background-color: black;
+                }
+
+            }
+
+
+            .form-box input[type="submit"] {
+                width: min-content;
+                cursor: pointer;
+                border: 1px solid white;
+                padding: 10px 20px;
+                font-family: "Roboto", sans-serif;
+                text-decoration: none;
+                position: relative;
+                top: 12px;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+                border-radius: 0;
+
+
+                &:hover {
+                    left: 5px;
+                    top: 7px;
+                    box-shadow: -5px 5px 0px white;
+                    background-color: rgb(27, 25, 25);
+                    color: white;
+                }
+            }
+
+            .info-box div {
+                margin-bottom: 20px;
+                color: #a8a8a8;
+            }
+
+            .info-box strong {
+                display: block;
+                margin-bottom: 5px;
+                color: #ffffff;
+                font-size: x-large;
+            }
+        }

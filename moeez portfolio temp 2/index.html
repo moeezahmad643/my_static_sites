@@ -5,334 +5,18 @@
     <!-- basic -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="bzAjqqk5NXLLxCvkK6xr4V4A6xPYTUBWbHexP0H_vbk" />
     <title>Moeez Ahmad</title>
-
-    <!-- css files -->
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #1c1d21;
-            color: white;
-            height: 100lvh;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        header {
-            height: 90vh;
-            padding: 40px 20px;
-            display: grid;
-            place-items: center;
-
-            h1 {
-                font-family: "DM Sans", sans-serif;
-                font-weight: 500;
-                font-size: clamp(2rem, 15vmax, 15vmax);
-                line-height: 0.8;
-            }
-
-            @media (max-width: 600px) {
-                h1 {
-                    font-size: 3rem;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                h1 {
-                    font-size: 12vmax;
-                }
-            }
-        }
-
-        nav {
-            padding: 10px 20px;
-            display: flex;
-            height: 10lvh;
-            flex-direction: row;
-            justify-content: space-between;
-
-            align-items: center;
-
-            h1 {
-                font-family: "Roboto", sans-serif;
-            }
-
-            .bi {
-                color: white;
-                font-size: 20px;
-                padding: 10px;
-                aspect-ratio: 1/1;
-                border-radius: 50%;
-                position: relative;
-
-                &:hover {
-                    background-color: gray;
-                }
-            }
-        }
-
-        #about {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-            div {
-                width: 45%;
-
-                h2 {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 50px;
-                    margin-bottom: 20px;
-                }
-
-                p {
-                    font-size: large;
-                    font-family: "DM Sans", sans-serif;
-                }
-
-                a {
-                    border: 1px solid white;
-                    padding: 10px 20px;
-                    color: white;
-                    font-family: "roboto", sans-serif;
-                    text-decoration: none;
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    transition: all 0.3s ease-in-out;
-
-                    &:hover {
-                        left: 5px;
-                        top: -5px;
-                        box-shadow: -5px 5px 0px white;
-                        background-color: rgb(27, 25, 25);
-                    }
-                }
-            }
-
-            img {
-                width: 25%;
-                filter: saturate(0.1);
-                aspect-ratio: 3/4;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-
-            @media (max-width: 768px) {
-                flex-direction: column-reverse;
-                align-items: center;
-
-                div {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                img {
-                    width: 80%;
-                    margin-top: 20px;
-                }
-            }
-        }
-
-        #testimonials {
-            display: flex;
-            align-items: center;
-            padding: 40px;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-
-            .testimonial {
-                border: 2px solid white;
-                width: 16%;
-                padding: 20px;
-                border-radius: 6px;
-                min-width: 200px;
-                top: 0;
-                transition: all 0.3s ease-in-out;
-                position: relative;
-
-                p {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 15px;
-                    margin-bottom: 10px;
-                }
-
-                @media screen and (max-width: 600px) {
-                    p {
-                        font-size: 14px;
-                    }
-                }
-
-                span {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 15px;
-                    font-style: italic;
-                    margin-bottom: 10px;
-                }
-            }
-
-            .testimonial:hover {
-                top: -10px;
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-            }
-
-            .testimonial-even {
-                transform: rotate(-5deg);
-            }
-
-            .testimonial-odd {
-                transform: rotate(5deg);
-            }
-        }
-
-
-        #workWith {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 40px;
-            flex-wrap: wrap;
-
-            div {
-                text-align: center;
-
-                h3 {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 50px;
-                    margin-bottom: 10px;
-                }
-
-                h3:after {
-                    content: " +";
-                }
-
-                p {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 20px;
-                }
-            }
-        }
-
-
-        #project1 {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: auto;
-            padding: 40px;
-
-            div {
-                width: 45%;
-
-                h1 {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 50px;
-                    margin-bottom: 20px;
-
-                    line-height: 1;
-                }
-
-                p {
-                    font-size: large;
-                    font-family: "DM Sans", sans-serif;
-                }
-
-                @media screen and (max-width: 600px) {
-                    p {
-                        font-size: 16px;
-                    }
-                }
-            }
-
-            img {
-                width: 45%;
-                object-fit: contain;
-                border-radius: 10px;
-            }
-
-            @media (max-width: 768px) {
-                flex-direction: column-reverse;
-                align-items: center;
-
-                div {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                img {
-                    width: 80%;
-                    margin-top: 20px;
-                }
-            }
-        }
-
-        #project2 {
-            flex-direction: row-reverse;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: auto;
-            padding: 40px;
-
-            div {
-                width: 45%;
-
-                h1 {
-                    font-family: "DM Sans", sans-serif;
-                    font-weight: 500;
-                    font-size: 50px;
-                    line-height: 1;
-                    margin-bottom: 20px;
-                }
-
-                p {
-                    font-size: large;
-                    font-family: "DM Sans", sans-serif;
-                }
-
-                @media screen and (max-width: 600px) {
-                    p {
-                        font-size: 16px;
-                    }
-                }
-            }
-
-            img {
-                width: 45%;
-                object-fit: contain;
-                border-radius: 10px;
-            }
-
-            @media (max-width: 768px) {
-                flex-direction: column-reverse;
-                align-items: center;
-
-                div {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                img {
-                    width: 80%;
-                    margin-top: 20px;
-                }
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/testimonials.css">
+    <link rel="stylesheet" href="style/workwith.css">
+    <link rel="stylesheet" href="style/project1.css">
+    <link rel="stylesheet" href="style/project2.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 
 <body>
@@ -361,37 +45,53 @@
                 full-stack applications.
             </p>
             <br>
+            <span>
+                <a href="https://www.instagram.com/moeezahmad.tech/">
+                    <bi class="bi-instagram"></bi>
+                </a>
+                <a href="https://www.facebook.com/moeezahmadd">
+                    <bi class="bi-facebook"></bi>
+                </a>
+                <a href="https://www.linkedin.com/in/moeez-ahmadd/">
+                    <bi class="bi-linkedin"></bi>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=923259491349">
+                    <bi class="bi-whatsapp"></bi>
+                </a>
+            </span>
             <br>
-            <a href="#projects">View Projects</a>
+            <a class="button" href="#projects">View Projects</a>
         </div>
-        <img src="admin.jpg" alt="">
+        <img src="img/admin.jpg" alt="">
     </section>
 
     <section id="testimonials">
         <div class="testimonial testimonial-even">
-            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
-            <span>- Client A</span>
+            <q>I’ve had the pleasure of working with Moeez Ahmad and experiencing his creative prowess
+                first-hand...</q><br>
+            <span>- Muhammad ALeem</span>
         </div>
         <div class="testimonial testimonial-odd">
-            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
-            <span>- Client B</span>
+            <q>I highly recommend Moeez Ahmed for his outstanding web development skills, particularly in
+                portfolio...</q><br>
+            <span>- Tayyaba Khan</span>
         </div>
         <div class="testimonial testimonial-even">
-            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
-            <span>- Client A</span>
+            <q>I recently had the opportunity to see a redesign done by Moeez, and I must say this guy clearly
+                put...</q><br>
+            <span>- Bilal Arshad</span>
         </div>
         <div class="testimonial testimonial-odd">
-            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
-            <span>- Client B</span>
+            <q>I enjoyed working with Moeez Ahmad on creating my portfolio website, and I am happy with the
+                results...</q><br>
+            <span>- Affan Tasadduq</span>
         </div>
         <div class="testimonial testimonial-even">
-            <p>"Moeez is an exceptional developer. His attention to detail and commitment to quality is unmatched."</p>
-            <span>- Client A</span>
+            <q>I highly recommend Moeez for any freelance projects. With three years of coding experience and
+                expertise...</q><br>
+            <span>- Arshad Ali</span>
         </div>
-        <div class="testimonial testimonial-odd">
-            <p>"Working with Moeez was a pleasure. He delivered on time and exceeded our expectations."</p>
-            <span>- Client B</span>
-        </div>
+
     </section>
 
 
@@ -442,7 +142,7 @@
                 I focus on clean code and best practices to ensure maintainability and scalability.
             </p>
         </div>
-        <img src="jame.png" alt="">
+        <img src="img/jame.png" alt="">
     </section>
 
     <section id="project2">
@@ -457,17 +157,92 @@
                 I prioritize security and performance in all my projects, ensuring a seamless experience for users.
             </p>
         </div>
-        <img src="adam.png" alt="">
+        <img src="img/adam.png" alt="">
     </section>
 
+    <div class="container">
+        <h1>Get in touch</h1>
 
+        <div class="contact-section">
+            <form class="form-box" action="https://formspree.io/f/xblroqgq" method="POST">
+                <p>Send a Message</p>
+                <input type="text" required name="User_Name" placeholder="Name" />
+                <input type="email" required name="User_Email" placeholder="Email Address" />
+                <select required name="User_Service">
+                    <option class="option" selected>Web Design</option>
+                    <option class="option">Graphic Design</option>
+                </select>
+                <textarea rows="5" required name="User_Message" placeholder="Message"></textarea>
+                <input type="submit" value="Submit"></input>
+            </form>
 
+            <div class="info-box">
+                <div>
+                    <strong>Call Us</strong>
+                    +92 325 949 1349
+                </div>
+                <div>
+                    <strong>Visit Us</strong>
+                    Lahore, Pakistan
+                </div>
+                <div>
+                    <strong>Mail</strong>
+                    moeezahmad.pk@gmail.com
+                </div>
+                <div>
+                    <strong>Social Media</strong>
+                    <span>
+                        <a href="https://www.instagram.com/moeezahmad.tech/">
+                            <bi class="bi-instagram"></bi>
+                        </a>
+                        <a href="https://www.facebook.com/moeezahmadd">
+                            <bi class="bi-facebook"></bi>
+                        </a>
+                        <a href="https://www.linkedin.com/in/moeez-ahmadd/">
+                            <bi class="bi-linkedin"></bi>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=923259491349">
+                            <bi class="bi-whatsapp"></bi>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    <center>
-        <h1>To be Continue After Eid</h1>
-    </center>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <h2>Consultantcy is Free !! <br>Let's Discuss is this works for you</h2>
+        <div class="footer-flex">
+            <div>
+                <p><strong>Address</strong></p>
+                <p>Lahore, Pakistan</p>
+            </div>
+            <div>
+                <p><strong>Phone Number</strong></p>
+                <p>+92 325 949 1349</p>
+            </div>
+            <div>
+                <p><strong>Email</strong></p>
+                <p>moeezahmad.pk@gmail.com</p>
+            </div>
+            <div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/moeezahmad.tech/">
+                        <bi class="bi-instagram"></bi>
+                    </a>
+                    <a href="https://www.facebook.com/moeezahmadd">
+                        <bi class="bi-facebook"></bi>
+                    </a>
+                    <a href="https://www.linkedin.com/in/moeez-ahmadd/">
+                        <bi class="bi-linkedin"></bi>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=923259491349">
+                        <bi class="bi-whatsapp"></bi>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'
@@ -661,7 +436,77 @@
                 }
             });
         }
-        animateProject2() 
+        animateProject2()
+
+        function animateContact() {
+            gsap.from('.container', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.container',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+            gsap.from('.contact-section .form-box', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.contact-section',
+                    start: '10% center',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+
+            gsap.from('.contact-section .info-box', {
+                x: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.contact-section',
+                    start: '10% 70%',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+        }
+        animateContact()
+
+        function animateFooter() {
+            gsap.from('footer h2', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: 'footer',
+                    start: '10% 90%',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+
+            gsap.from('footer .footer-flex', {
+                y: 100,
+                duration: 1,
+                opacity: 0,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: 'footer',
+                    start: '10% 90%',
+                    end: '50% center',
+                    scrub: 1,
+                }
+            });
+        }
+        animateFooter()
     </script>
 </body>
 

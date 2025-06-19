@@ -1,0 +1,27 @@
+
+        nav {
+            padding: 10px 20px;
+            display: flex;
+            height: 10lvh;
+            flex-direction: row;
+            justify-content: space-between;
+
+            align-items: center;
+
+            h1 {
+                font-family: "Roboto", sans-serif;
+            }
+
+            .bi {
+                color: white;
+                font-size: 20px;
+                padding: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                position: relative;
+
+                &:hover {
+                    background-color: gray;
+                }
+            }
+        }

@@ -1,0 +1,95 @@
+
+        #about {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allow wrapping of elements */
+
+            div {
+                width: 45%;
+                box-sizing: border-box;
+                /* Include padding in the element's width */
+
+                h2 {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: large;
+                    font-family: "DM Sans", sans-serif;
+                }
+
+                span {
+                    display: flex;
+                    gap: 10px;
+
+                    a {
+                        position: relative;
+                        top: 0;
+                        color: white;
+                        font-size: 30px;
+                        text-decoration: none;
+
+                        .bi {
+                            margin: 0px 20px !important;
+                        }
+
+                        &:hover {
+                            top: -5px;
+                            color: rgb(230, 228, 228);
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+                .button {
+                    border: 1px solid white;
+                    padding: 10px 20px;
+                    color: white;
+                    font-family: "Roboto", sans-serif;
+                    text-decoration: none;
+                    position: relative;
+                    top: 12px;
+                    left: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .button:hover {
+                    left: 5px;
+                    top: 7px;
+                    box-shadow: -5px 5px 0px white;
+                    background-color: rgb(27, 25, 25);
+                }
+            }
+
+            img {
+                width: 25%;
+                filter: saturate(0.1);
+                aspect-ratio: 3/4;
+                object-fit: cover;
+                border-radius: 10px;
+                margin-left: 20px;
+                /* Adding some margin between text and image */
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+
+                div {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    /* Add space between text and image in mobile view */
+                }
+
+                img {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+            }
+        }
