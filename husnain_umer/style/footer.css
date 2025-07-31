@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  background-color: #ff4500;
+  color: white;
+  flex-wrap: wrap;
+  padding: 0px 6vw;
+  h2{
+    display: flex;
+    font-size: 30px;
+  }
+  div {
+    width:40%;
+    min-width: 300px;
+    padding: 4vw 20px;
+    span{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .icons{
+        padding-top: 20px;
+        .bi{
+            color: #ff4500;
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+    }
+  }
+
+}
+.imp {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}

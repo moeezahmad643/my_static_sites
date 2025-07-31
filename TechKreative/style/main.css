@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Telegraf Regular";
+  src: local("Telegraf Regular"), url("../fonts/Regular.woff") format("woff");
+}
+
+.telegraf {
+  font-family: "Telegraf Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Telegraf Regular";
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.sec {
+  color: #008080;
+}
+
+.btn {
+  background-color: #008080;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #006666;
+  transform: scale(1.02);
+}
+
+.btn:active {
+  background-color: #004d4d;
+  transform: scale(0.98);
+}
+
+html {
+  scroll-behavior: smooth !important;
+  color-scheme: light;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: url("../images/background2.webp");
+  background-size: 20%;
+  background-color: white;
+  scroll-behavior: smooth !important;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html,
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+* {
+  background-color: transparent;
+  color: inherit;
+}
+
+img {
+  mix-blend-mode: normal !important;
+}
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 40px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+}
+
+.circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+  background-color: #008080;
+  height: 10px;
+  width: 10px;
+}

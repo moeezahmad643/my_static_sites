@@ -1,0 +1,15 @@
+# Set default charset in HTTP header
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+</IfModule>
+
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^techkreative\.com$ [NC]
+RewriteRule ^(.*)$ https://www.techkreative.com/$1 [L,R=301]

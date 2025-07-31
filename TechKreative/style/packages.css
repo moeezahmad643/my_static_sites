@@ -1,0 +1,120 @@
+#packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  background-color: white;
+  .main {
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      color: #008080;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      width: 60%;
+      min-width: 300px;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  .package-list {
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+    .package-item {
+      background-color: white;
+      min-width: 280px;
+      width: 20%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
+        inset 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      justify-content: space-between;
+      padding: 30px;
+      gap: 20px;
+
+      .top {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+
+        p {
+          color: #008080;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .gray {
+          font-weight: normal;
+          color: #666;
+          font-size: 18px;
+          margin-top: 5px;
+        }
+      }
+      > p {
+        height: 180px;
+        line-height: 1.5;
+      }
+      ul {
+        padding: 0 20px;
+        height: 180px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li {
+          margin: 2px 0;
+          font-size: 18px;
+          color: #333;
+        }
+      }
+      .price {
+        font-size: 40px;
+        color: #008080;
+        font-weight: bold;
+      }
+      a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #packages .main {
+    padding: 30px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      width: 80%;
+      font-size: 16px;
+    }
+  }
+  #packages .package-list {
+    flex-direction: column;
+    align-items: center;
+    .package-item {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+}

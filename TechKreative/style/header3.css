@@ -1,0 +1,128 @@
+body {
+  height: auto;
+  overflow-y: auto;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html {
+  color-scheme: light;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 5vw 0px;
+  text-align: center;
+
+  /* padding: 50px; */
+
+  div {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      padding: 0 20px;
+      font-size: 80px;
+      text-align: center;
+      color: black;
+    }
+
+    p {
+      padding: 10px 20px;
+      font-size: 22px;
+      text-align: center;
+      color: #2e2e2e;
+    }
+
+    a {
+      margin: 20px;
+    }
+
+    img {
+      width: 80%;
+      height: auto;
+      object-fit: cover;
+      align-self: center;
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    div {
+      height: min-content;
+
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    div {
+      width: 90%;
+      height: min-content;
+      padding: 20px 0px;
+      img {
+        width: 50%;
+      }
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+
+    div {
+      height: min-content;
+      position: relative;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    div {
+      gap: 10px;
+
+      h1 {
+        font-size: 40px;
+        padding: 0 10px;
+      }
+
+      p {
+        padding: 0 10px;
+      }
+
+      .btn {
+        margin: 0 10px;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

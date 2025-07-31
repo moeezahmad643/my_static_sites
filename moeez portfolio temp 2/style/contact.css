@@ -20,7 +20,7 @@
             .form-box,
             .info-box {
                 flex: 1;
-                min-width: 300px;
+                min-width: 220px;
                 font-family: "DM Sans", sans-serif;
 
                 span {

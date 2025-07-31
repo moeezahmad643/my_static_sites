@@ -1,0 +1,42 @@
+#wordDone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 5vw;
+  width: 100%;
+  background-color: #f8f8f8 !important;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    span {
+      font-size: 40px;
+      color: #008080;
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      &::after {
+        content: "+";
+      }
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      color: #2e2e2e;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

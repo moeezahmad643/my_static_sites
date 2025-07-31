@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: #070a29;
+  color: white;
+}
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+  scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+
+}
+
+h1,
+h2 {
+  font-family: "Michroma", sans-serif;
+}
+
+.first {
+  color: #6838ff;
+}
+.second {
+  color: #ad90f7;
+}
+.third {
+  color: #39317c;
+}

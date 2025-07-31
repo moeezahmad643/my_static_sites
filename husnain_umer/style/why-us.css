@@ -1,0 +1,61 @@
+.why-us {
+  display: flex;
+  padding: 5vw;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 100px;
+
+  span {
+    border: 1px solid #ff4500;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #ff440012;
+  }
+  h2 {
+    color: #ff4500;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 100%;
+    margin-top: 30px;
+    div {
+      padding: calc(2vw + 20px);
+      width: 28vw;
+
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.261);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        color: #333;
+        margin-bottom: 0.5vw;
+        line-height: 1;
+        font-size: large;
+      }
+
+      p {
+        color: #666;
+        font-size: medium;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        width: 90%;
+        margin-bottom: 2vw;
+      }
+    }
+  }
+}

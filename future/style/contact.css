@@ -1,0 +1,228 @@
+.contact {
+  display: flex;
+  align-items: center;
+  height:80vh;
+  scroll-snap-align: start;
+
+  .img-box {
+    height: 60vh;
+    position: relative;
+    width: 50%;
+    img {
+      width: 100px;
+      position: relative;
+      height: auto;
+    }
+    .img2 {
+      width: 150px;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+    }
+    .img3 {
+      width: 200px;
+      position: absolute;
+      top: 20%;
+      right: 10%;
+    }
+    .img4 {
+      width: 250px;
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
+    }
+    .img5 {
+      width: 180px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .img6 {
+      width: 100px;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    .img7 {
+      width: 120px;
+      position: absolute;
+      top: 50%;
+      right: 0%;
+    }
+    .img8 {
+      width: 80px;
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+    }
+    .img9 {
+      width: 190px;
+      position: absolute;
+      bottom: 10%;
+      right: 25%;
+    }
+  }
+  div {
+    width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    padding: 10px 30px;
+
+    span {
+      font-size: 15px;
+      color: white;
+      padding: 10px 20px;
+      background-color: #6738ff3f;
+      opacity: 0.88;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    form {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 20px;
+      width: 90%;
+      input,
+      textarea {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #ccc;
+        width: 100%;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 0px 14px rgba(255, 255, 255, 0.102),
+          inset 0 0px 14px rgba(255, 255, 255, 0.102);
+      }
+
+      button {
+        background-color: #6838ff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+
+        &:hover {
+          background-color: #ad90f7;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .contact {
+    div {
+      text-align: start !important;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0;
+
+    .img-box {
+      width: 100vw;
+      overflow: hidden;
+      height: 40vh;
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .img2 {
+        width: 150px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+      }
+      .img3 {
+        width: 100px;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+      }
+      .img4 {
+        width: 150px;
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
+      }
+      .img5 {
+        width: 90px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .img6 {
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+      }
+      .img7 {
+        width: 60px;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+      }
+      .img8 {
+        width: 40px;
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+      }
+      .img9 {
+        width: 80px;
+        position: absolute;
+        bottom: 10%;
+        right: 25%;
+      }
+    }
+
+    .content {
+      padding: 10px 30px;
+    }
+    div {
+      width: 100%;
+      span {
+        font-size: 15px;
+        color: white;
+        padding: 10px 20px;
+        background-color: #6738ff3f;
+        opacity: 0.88;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

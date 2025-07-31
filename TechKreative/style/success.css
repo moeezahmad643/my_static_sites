@@ -1,0 +1,27 @@
+.success-body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.success{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    h2{
+        font-size: 30px  !important;
+    }
+    
+    @media screen and (max-width: 800px) {
+        h2{
+            font-size: 25px !important;
+        }
+    }
+}

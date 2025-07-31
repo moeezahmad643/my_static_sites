@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.techkreative.com/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.techkreative.com/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://www.techkreative.com/services.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Packages Page -->
+  <url>
+    <loc>https://www.techkreative.com/packages.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.techkreative.com/contact.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Success/Confirmation Page -->
+  <url>
+    <loc>https://www.techkreative.com/success.html</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- LinkedIn Branding Page -->
+  <url>
+    <loc>https://www.techkreative.com/linkedinBranding.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- 404 Page (Optional to list) -->
+  <url>
+    <loc>https://www.techkreative.com/404.html</loc>
+    <priority>0.10</priority>
+  </url>
+
+</urlset>

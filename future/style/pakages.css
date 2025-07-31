@@ -1,0 +1,110 @@
+.pakages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+
+  span {
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    background-color: #6738ff3f;
+    opacity: 0.88;
+    border-radius: 10px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    max-width: 1000px;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 40px;
+
+    div {
+      width: 300px;
+      border-radius: 10px;
+      background-color: #6738ff1c;
+      padding: 50px 20px;
+      z-index: 1;
+      position: relative;
+      overflow: hidden;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        position: absolute;
+
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: #87029e;
+        background: linear-gradient(
+          177deg,
+          #311a7c 1%,
+          rgba(167, 4, 255, 0) 100%
+        );
+        z-index: -1;
+      }
+
+      h3 {
+        z-index: 2;
+        font-size: 50px;
+        line-height: 0.9;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        z-index: 2;
+        text-align: left;
+      }
+      ul {
+        li {
+          margin-top: 10px;
+          margin-left: 10px;
+          font-size: 15px;
+        }
+      }
+      button {
+        background-color: #6838ff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 13px;
+        margin-top: 10px;
+
+        &:hover {
+          background-color: #ad90f7;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .pakages {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

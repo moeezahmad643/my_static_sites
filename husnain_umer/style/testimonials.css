@@ -1,0 +1,85 @@
+.testimonials {
+  display: flex;
+  padding: 5vw;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 100px;
+  background-color: rgb(36, 36, 36);
+  color: rgb(220, 220, 220);
+
+  > span {
+    border: 1px solid #ff4500;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #ff440012;
+  }
+  h2 {
+    color: #ff4500;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 100%;
+    margin-top: 30px;
+    > div {
+      background-color: rgb(53, 53, 53);
+      color: rgb(220, 220, 220);
+      width: 28vw;
+      padding: calc(2vw + 20px);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.261);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+      > span {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        margin-bottom: 1vw;
+        img {
+          border-radius: 50%;
+          height: 90px;
+          width: 90px;
+          border: 2px solid white;
+          box-shadow: 0 2px 2px rgba(255, 255, 255, 1.328);
+          object-fit: cover;
+          object-position: top;
+          aspect-ratio: 1/1;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          h3 {
+            line-height: 1;
+            margin-bottom: 0.5vw;
+            font-size: large;
+          }
+          .title {
+            font-size: small;
+          }
+        }
+      }
+
+      p {
+        color: #a7a7a7;
+        font-size: medium;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        width: 90%;
+        margin-bottom: 2vw;
+      }
+    }
+  }
+}
