@@ -8,8 +8,8 @@ testimonials.from(".testimonials span, .testimonials h2 ", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".testimonials h2",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });
@@ -22,8 +22,8 @@ testimonials.from(".testimonials .cards ", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".testimonials .cards",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });

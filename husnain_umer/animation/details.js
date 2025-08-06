@@ -8,8 +8,8 @@ details.from(".details  div ", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".details div",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });

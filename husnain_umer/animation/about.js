@@ -8,8 +8,8 @@ about.from(".about .about-image", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".about .about-image",
-    start: "top 60%",
-    end: "top 40%",
+   start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });
@@ -22,8 +22,8 @@ about.from(".about .text-box", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".about .text-box",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });

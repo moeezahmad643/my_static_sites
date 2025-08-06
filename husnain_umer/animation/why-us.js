@@ -8,8 +8,8 @@ whyUs.from(".why-us span, .why-us h2 ", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".why-us h2",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });
@@ -22,8 +22,8 @@ whyUs.from(".why-us .cards ", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".why-us .cards",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 80%",
+    end: "top 60%",
     scrub: true,
   },
 });

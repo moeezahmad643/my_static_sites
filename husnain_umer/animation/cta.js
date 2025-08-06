@@ -8,8 +8,8 @@ cta.from(".cta h2, .cta p, .cta a, .cta .cta-background", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: ".cta h2",
-        start: "top 60%",
-        end: "top 40%",
+        start: "top 80%",
+    end: "top 60%",
         scrub: true,
     },
 });

@@ -8,7 +8,7 @@ footer.from("footer div", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: "footer div",
-    start: "top 80%",
+   start: "top 80%",
     end: "top 60%",
     scrub: true,
   },
